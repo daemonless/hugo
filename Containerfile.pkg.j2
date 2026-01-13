@@ -35,7 +35,7 @@ LABEL org.opencontainers.image.title="{{ title }} (pkg)" \
 # Install packages
 RUN pkg update && \
     pkg install -y ${PACKAGES} && \
-    mkdir -p /app && pkg info gohugo | sed -n 's/.*Version.*: *//p' > /app/version && \
+    mkdir -p /app && pkg info gohugo | sed -n 's/.*Version.*: *//p' | tr ',' '_' > /app/version && \
     pkg clean -ay && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
