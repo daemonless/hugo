@@ -21,8 +21,17 @@ if [ -n "${HUGO_BASEURL}" ]; then
 fi
 
 # Signal readiness when the port is responsive
+
 # Using -T 1 for fast check
+
 s6-ready-when fetch -qo /dev/null -T 1 http://localhost:1313/
 
+
+
 echo "[hugo] Starting Hugo Server..."
-exec /usr/local/bin/s6-setuidgid bsd hugo server --bind 0.0.0.0 --poll 700ms --disableFastRender ${HUGO_ARGS}
+
+# --appendPort=false ensures Hugo respects the port in baseURL (e.g. 8833) 
+
+# instead of appending the internal bind port (1313)
+
+exec /usr/local/bin/s6-setuidgid bsd hugo server --bind 0.0.0.0 --poll 700ms --disableFastRender --appendPort=false ${HUGO_ARGS}
