@@ -1,0 +1,42 @@
+name: hugo
+
+x-daemonless:
+  title: "Hugo"
+  icon: ":simple-hugo:"
+  category: "Development"
+  description: "The world's fastest framework for building websites."
+  upstream_url: "https://github.com/gohugoio/hugo"
+  web_url: "https://gohugo.io/"
+  freshports_url: "https://www.freshports.org/www/gohugo/"
+  user: "bsd"
+  mlock: false
+  upstream_binary: true
+  
+  docs:
+    env:
+      PUID: "User ID for the application process"
+      PGID: "Group ID for the application process"
+      TZ: "Timezone for the container"
+      HUGO_BASEURL: "Hostname (and path) to the root"
+    volumes:
+      /app: "Website source code (mount your repo here)"
+    ports:
+      1313: "Dev Server Port"
+
+services:
+  hugo:
+    image: ghcr.io/daemonless/hugo:latest
+    container_name: hugo
+    restart: unless-stopped
+    
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - HUGO_BASEURL=http://localhost:1313
+
+    volumes:
+      - /path/to/my-site:/app
+
+    ports:
+      - "1313:1313"

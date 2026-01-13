@@ -1,0 +1,50 @@
+#!/bin/sh
+set -e
+# Ensure /app and /cache have correct ownership and respect PUID/PGID
+
+PUID=${PUID:-1000}
+PGID=${PGID:-1000}
+
+echo "[hugo] Setting up bsd user with PUID=$PUID PGID=$PGID"
+
+# Modify bsd user/group to match requested UID/GID
+pw groupmod bsd -g "$PGID" 2>/dev/null || true
+pw usermod bsd -u "$PUID" -g "$PGID" 2>/dev/null || true
+
+# Ensure /app and /cache exist and are owned by bsd
+
+mkdir -p /app /cache
+
+chown -R bsd:bsd /app /cache
+
+
+
+# Hugo Git integration (allow all users to see /app as safe)
+
+
+
+# Use --system to avoid HOME/XDG permission issues on /root
+
+
+
+git config --system --add safe.directory /app 2>/dev/null || true
+
+
+
+
+
+
+
+echo "[hugo] Initialization complete"
+
+
+
+
+
+
+
+
+
+
+
+

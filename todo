@@ -1,0 +1,40 @@
+# Hugo Container TODO
+
+## Critical (High Priority)
+
+1. [x] **compose.yaml command conflicts with s6 service**
+2. [x] **Incomplete Woodpecker pipeline**
+3. [x] **Missing WORKDIR in standard Containerfile**
+
+## Medium Priority
+
+4. [x] **Shell scripts lack error handling**
+5. [x] **Missing explicit user switching**
+6. [x] **Missing HUGO_BASEURL in compose.yaml environment**
+7. [x] **No healthcheck defined**
+8. [x] **PUID/PGID not supported**
+9. [x] **Inconsistent README placeholders**
+
+## New Issues
+
+15. [x] **Missing ARG UPSTREAM_URL in Containerfile.pkg**
+    - Line 22 references `${UPSTREAM_URL}` but the ARG is not defined
+    - Standard Containerfile has it (line 6), pkg variant missing
+    - Results in empty label for pkg builds
+
+## Low Priority
+
+10. [x] **Empty baselines directory**
+11. [x] **Duplicate configuration sources** (Kept both for compatibility, but compose.yaml is primary)
+12. [x] **Missing upstream-url label in Containerfile.pkg**
+13. [x] **Silent error suppression in Containerfile**
+14. [x] **Containerfile.j2 templates may be dead code** (Verified alive and working)
+
+## Summary
+
+| Priority | Count | Status |
+|----------|-------|--------|
+| Critical | 3 | DONE |
+| Medium | 6 | DONE |
+| Low | 5 | DONE |
+| **Total** | **14** | **100%** |

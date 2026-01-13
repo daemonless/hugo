@@ -1,0 +1,52 @@
+ARG BASE_VERSION=15
+FROM ghcr.io/daemonless/base:${BASE_VERSION}
+
+ARG FREEBSD_ARCH=amd64
+ARG PACKAGES="gohugo git-tiny node npm"
+ARG UPSTREAM_URL="https://github.com/gohugoio/hugo/releases"
+ARG HEALTHCHECK_ENDPOINT="http://localhost:1313/"
+
+# --- Metadata (Injected by Generator) ---
+LABEL org.opencontainers.image.title="Hugo (pkg)" \
+      org.opencontainers.image.description="The world's fastest framework for building websites." \
+      org.opencontainers.image.source="https://github.com/daemonless/hugo" \
+      org.opencontainers.image.url="https://gohugo.io/" \
+      org.opencontainers.image.documentation="https://gohugo.io/documentation/" \
+      org.opencontainers.image.licenses="Apache-2.0" \
+      org.opencontainers.image.vendor="daemonless" \
+      org.opencontainers.image.authors="daemonless" \
+      io.daemonless.category="Development" \
+      io.daemonless.port="1313" \
+      io.daemonless.volumes="/app" \
+      io.daemonless.arch="${FREEBSD_ARCH}" \
+      io.daemonless.pkg-source="pkg" \
+      io.daemonless.upstream-url="${UPSTREAM_URL}" \
+      io.daemonless.healthcheck-url="${HEALTHCHECK_ENDPOINT}" \
+      io.daemonless.packages="${PACKAGES}"
+
+# Install packages
+RUN pkg update && \
+    pkg install -y ${PACKAGES} && \
+    mkdir -p /app && pkg info gohugo | sed -n 's/.*Version.*: *//p' > /app/version && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
+
+# Create directories
+RUN mkdir -p /app /cache && \
+    chown -R bsd:bsd /app /cache
+
+ENV HUGO_CACHEDIR=/cache
+
+# Copy configuration and service scripts
+COPY root/ /
+
+# Make scripts executable
+RUN chmod +x /etc/cont-init.d/* /etc/services.d/*/run
+
+# --- Expose (Injected by Generator) ---
+EXPOSE 1313
+
+# --- Volumes (Injected by Generator) ---
+VOLUME /app
+
+WORKDIR /app

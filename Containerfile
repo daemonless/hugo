@@ -1,0 +1,66 @@
+ARG BASE_VERSION=15
+FROM ghcr.io/daemonless/base:${BASE_VERSION}
+
+ARG FREEBSD_ARCH=amd64
+ARG PACKAGES="git-tiny node npm ca_root_nss"
+ARG UPSTREAM_URL="https://api.github.com/repos/gohugoio/hugo/releases/latest"
+ARG UPSTREAM_JQ=".tag_name"
+ARG HEALTHCHECK_ENDPOINT="http://localhost:1313/"
+
+ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
+
+# --- Metadata (Injected by Generator) ---
+LABEL org.opencontainers.image.title="Hugo" \
+      org.opencontainers.image.description="The world's fastest framework for building websites." \
+      org.opencontainers.image.source="https://github.com/daemonless/hugo" \
+      org.opencontainers.image.url="https://gohugo.io/" \
+      org.opencontainers.image.documentation="https://gohugo.io/documentation/" \
+      org.opencontainers.image.licenses="Apache-2.0" \
+      org.opencontainers.image.vendor="daemonless" \
+      org.opencontainers.image.authors="daemonless" \
+      io.daemonless.category="Development" \
+      io.daemonless.port="1313" \
+      io.daemonless.volumes="/app" \
+      io.daemonless.arch="${FREEBSD_ARCH}" \
+      io.daemonless.pkg-source="binary" \
+      io.daemonless.upstream-url="${UPSTREAM_URL}" \
+      io.daemonless.upstream-jq="${UPSTREAM_JQ}" \
+      io.daemonless.healthcheck-url="${HEALTHCHECK_ENDPOINT}" \
+      io.daemonless.packages="${PACKAGES}"
+
+# Install runtime packages
+RUN pkg update && \
+    pkg install -y ${PACKAGES} && \
+    npm install -g sass && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/* /root/.npm
+
+# Download and install Hugo
+RUN VERSION=$(fetch -qo - "${UPSTREAM_URL}" | jq -r "${UPSTREAM_JQ}") && \
+    VERSION_NO_V=$(echo "${VERSION}" | sed 's/^v//') && \
+    echo "Installing Hugo ${VERSION}" && \
+    fetch -qo /tmp/hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/${VERSION}/hugo_${VERSION_NO_V}_freebsd-amd64.tar.gz" && \
+    tar xzf /tmp/hugo.tar.gz -C /usr/local/bin hugo && \
+    chmod +x /usr/local/bin/hugo && \
+    mkdir -p /app && echo "${VERSION}" > /app/version && \
+    rm /tmp/hugo.tar.gz
+
+# Create directories
+RUN mkdir -p /app /cache && \
+    chown -R bsd:bsd /app /cache
+
+ENV HUGO_CACHEDIR=/cache
+
+# Copy configuration and service scripts
+COPY root/ /
+
+# Make scripts executable
+RUN chmod +x /etc/cont-init.d/* /etc/services.d/*/run
+
+# --- Expose (Injected by Generator) ---
+EXPOSE 1313
+
+# --- Volumes (Injected by Generator) ---
+VOLUME /app
+
+WORKDIR /app

@@ -1,0 +1,93 @@
+# Hugo
+
+The world's fastest framework for building websites.
+
+| | |
+|---|---|
+| **Port** | 1313 |
+| **Registry** | `ghcr.io/daemonless/hugo` |
+| **Source** | [https://api.github.com/repos/gohugoio/hugo/releases/latest](https://api.github.com/repos/gohugoio/hugo/releases/latest) |
+| **Website** | [https://gohugo.io/](https://gohugo.io/) |
+
+## Deployment
+
+### Podman Compose
+
+```yaml
+services:
+  hugo:
+    image: ghcr.io/daemonless/hugo:latest
+    container_name: hugo
+    environment:
+      - PUID=@PUID@
+      - PGID=@PGID@
+      - TZ=@TZ@
+      - HUGO_BASEURL=http://localhost:1313
+    volumes:
+      - /path/to/site:/app
+    ports:
+      - 1313:1313
+    restart: unless-stopped
+```
+
+### Podman CLI
+
+```bash
+podman run -d --name hugo \
+  -p 1313:1313 \
+  -e PUID=@PUID@ \
+  -e PGID=@PGID@ \
+  -e TZ=@TZ@ \
+  -e HUGO_BASEURL=http://localhost:1313 \
+  -v /path/to/site:/app \ 
+  ghcr.io/daemonless/hugo:latest
+```
+Access at: `http://localhost:1313`
+
+### Ansible
+
+```yaml
+- name: Deploy hugo
+  containers.podman.podman_container:
+    name: hugo
+    image: ghcr.io/daemonless/hugo:latest
+    state: started
+    restart_policy: always
+    env:
+      PUID: "@PUID@"
+      PGID: "@PGID@"
+      TZ: "@TZ@"
+      HUGO_BASEURL: "http://localhost:1313"
+    ports:
+      - "1313:1313"
+    volumes:
+      - "/path/to/site:/app"
+```
+
+## Configuration
+
+### Environment Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PUID` | `1000` | User ID for the application process |
+| `PGID` | `1000` | Group ID for the application process |
+| `TZ` | `UTC` | Timezone for the container |
+| `HUGO_BASEURL` | `http://localhost:1313` | Hostname (and path) to the root |
+
+### Volumes
+
+| Path | Description |
+|------|-------------|
+| `/app` | Website source code |
+
+### Ports
+
+| Port | Protocol | Description |
+|------|----------|-------------|
+| `1313` | TCP | Dev Server Port |
+
+## Notes
+
+- **User:** `bsd` (UID/GID set via PUID/PGID)
+- **Base:** Built on `ghcr.io/daemonless/base` (FreeBSD)

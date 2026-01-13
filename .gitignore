@@ -1,0 +1,6 @@
+# OS files
+.DS_Store
+.history
+
+# Local build artifacts
+/scripts/build.sh

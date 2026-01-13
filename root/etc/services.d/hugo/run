@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+# Hugo s6 run script
+
+cd /app
+
+# Check if site exists, initialize if not
+if [ ! -f "hugo.toml" ] && [ ! -f "config.toml" ] && [ ! -f "hugo.yaml" ]; then
+    echo "[hugo] No site configuration found. Initializing default site..."
+    cp /defaults/hugo.yaml ./hugo.yaml
+    mkdir -p layouts
+    cp /defaults/layouts/index.html ./layouts/index.html
+    # Permissions set in cont-init.d, but let's be sure for new files
+    chown -R bsd:bsd .
+fi
+
+# Set baseURL from environment if provided
+HUGO_ARGS=""
+if [ -n "${HUGO_BASEURL}" ]; then
+    HUGO_ARGS="${HUGO_ARGS} --baseURL ${HUGO_BASEURL}"
+fi
+
+# Signal readiness when the port is responsive
+# Using -T 1 for fast check
+s6-ready-when fetch -qo /dev/null -T 1 http://localhost:1313/
+
+echo "[hugo] Starting Hugo Server..."
+exec /usr/local/bin/s6-setuidgid bsd hugo server --bind 0.0.0.0 --poll 700ms --disableFastRender ${HUGO_ARGS}
