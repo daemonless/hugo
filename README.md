@@ -6,7 +6,7 @@ The world's fastest framework for building websites.
 |---|---|
 | **Port** | 1313 |
 | **Registry** | `ghcr.io/daemonless/hugo` |
-| **Source** | [https://api.github.com/repos/gohugoio/hugo/releases/latest](https://api.github.com/repos/gohugoio/hugo/releases/latest) |
+| **Source** | [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo) |
 | **Website** | [https://gohugo.io/](https://gohugo.io/) |
 
 ## Deployment
@@ -19,12 +19,12 @@ services:
     image: ghcr.io/daemonless/hugo:latest
     container_name: hugo
     environment:
-      - PUID=@PUID@
-      - PGID=@PGID@
-      - TZ=@TZ@
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
       - HUGO_BASEURL=http://localhost:1313
     volumes:
-      - /path/to/site:/app
+      - /path/to/containers/hugo/app:/app
     ports:
       - 1313:1313
     restart: unless-stopped
@@ -39,7 +39,7 @@ podman run -d --name hugo \
   -e PGID=@PGID@ \
   -e TZ=@TZ@ \
   -e HUGO_BASEURL=http://localhost:1313 \
-  -v /path/to/site:/app \ 
+  -v /path/to/containers/hugo/app:/app \ 
   ghcr.io/daemonless/hugo:latest
 ```
 Access at: `http://localhost:1313`
@@ -61,11 +61,10 @@ Access at: `http://localhost:1313`
     ports:
       - "1313:1313"
     volumes:
-      - "/path/to/site:/app"
+      - "/path/to/containers/hugo/app:/app"
 ```
 
 ## Configuration
-
 ### Environment Variables
 
 | Variable | Default | Description |
@@ -74,13 +73,11 @@ Access at: `http://localhost:1313`
 | `PGID` | `1000` | Group ID for the application process |
 | `TZ` | `UTC` | Timezone for the container |
 | `HUGO_BASEURL` | `http://localhost:1313` | Hostname (and path) to the root |
-
 ### Volumes
 
 | Path | Description |
 |------|-------------|
-| `/app` | Website source code |
-
+| `/app` | Website source code (mount your repo here) |
 ### Ports
 
 | Port | Protocol | Description |
