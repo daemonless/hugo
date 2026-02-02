@@ -1,5 +1,5 @@
 icon: ":simple-hugo:"
 cit:
   port: 1313
-versions:
+build:
   pkg_name: gohugo
