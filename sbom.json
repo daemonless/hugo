@@ -1,11 +1,11 @@
 {
   "image": "hugo",
-  "generated": "2026-02-01T22:43:11Z",
+  "generated": "2026-02-02T13:28:03Z",
   "tags": {
     "latest": {
-      "app_version": "v0.155.1",
+      "app_version": "v0.155.2",
       "source": "upstream-binary",
-      "generated": "2026-02-01T22:27:25Z",
+      "generated": "2026-02-02T13:25:28Z",
       "packages": {
         "freebsd": [
           {
@@ -298,7 +298,7 @@
     "pkg-latest": {
       "app_version": "0.155.1_1",
       "source": "freebsd-latest",
-      "generated": "2026-02-01T22:23:43Z",
+      "generated": "2026-02-02T13:26:44Z",
       "packages": {
         "freebsd": [
           {
@@ -567,7 +567,7 @@
           },
           {
             "name": "png",
-            "version": "1.6.53"
+            "version": "1.6.54"
           },
           {
             "name": "python311",
@@ -627,7 +627,7 @@
     "pkg": {
       "app_version": "0.154.5_1_1",
       "source": "freebsd-quarterly",
-      "generated": "2026-02-01T22:24:18Z",
+      "generated": "2026-02-02T13:25:18Z",
       "packages": {
         "freebsd": [
           {
