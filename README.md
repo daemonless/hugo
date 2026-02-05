@@ -11,6 +11,7 @@ The world's fastest framework for building websites.
 |---|---|
 | **Port** | 1313 |
 | **Registry** | `ghcr.io/daemonless/hugo` |
+| **Docs** | [daemonless.io/images/hugo](https://daemonless.io/images/hugo/) |
 | **Source** | [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo) |
 | **Website** | [https://gohugo.io/](https://gohugo.io/) |
 
@@ -91,5 +92,6 @@ Access at: `http://localhost:1313`
 
 ## Notes
 
+- **Architectures:** amd64
 - **User:** `bsd` (UID/GID set via PUID/PGID)
 - **Base:** Built on `ghcr.io/daemonless/base` (FreeBSD)
