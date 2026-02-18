@@ -1,12 +1,12 @@
 {
   "image": "hugo",
-  "generated": "2026-02-14T22:02:03Z",
+  "generated": "2026-02-18T22:27:49Z",
   "tags": {
     "latest": {
       "arch": "amd64",
-      "app_version": "v0.155.3",
+      "app_version": "v0.156.0",
       "source": "upstream",
-      "generated": "2026-02-14T22:01:42Z",
+      "generated": "2026-02-18T22:26:39Z",
       "packages": {
         "freebsd": [
           {
@@ -227,11 +227,11 @@
           },
           {
             "name": "node",
-            "version": "24.12.0_3"
+            "version": "24.13.0_3"
           },
           {
             "name": "node24",
-            "version": "24.12.0"
+            "version": "24.13.0"
           },
           {
             "name": "npm",
@@ -286,11 +286,11 @@
         "go": [
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.155.3-0.20260208164042-8a858213b739+dirty"
+            "version": "v0.155.4-0.20260218163955-9d914726dee8+dirty"
           },
           {
             "name": "stdlib",
-            "version": "v1.25.4"
+            "version": "v1.26.0"
           },
           {
             "name": "github.com/BurntSushi/locker",
@@ -342,7 +342,7 @@
           },
           {
             "name": "github.com/bep/helpers",
-            "version": "v0.6.0"
+            "version": "v0.7.0"
           },
           {
             "name": "github.com/bep/imagemeta",
@@ -366,15 +366,15 @@
           },
           {
             "name": "github.com/bep/simplecobra",
-            "version": "v0.6.1"
+            "version": "v0.7.0"
           },
           {
             "name": "github.com/bep/textandbinarywriter",
-            "version": "v0.0.0-20251212174530-cd9f0732f60f"
+            "version": "v0.1.0"
           },
           {
             "name": "github.com/bep/tmc",
-            "version": "v0.5.1"
+            "version": "v0.6.0"
           },
           {
             "name": "github.com/bits-and-blooms/bitset",
@@ -470,11 +470,11 @@
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
-            "version": "v0.5.0"
+            "version": "v0.6.0"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/passthrough",
-            "version": "v0.3.1"
+            "version": "v0.4.0"
           },
           {
             "name": "github.com/gohugoio/locales",
@@ -638,7 +638,7 @@
           },
           {
             "name": "github.com/spf13/pflag",
-            "version": "v1.0.9"
+            "version": "v1.0.10"
           },
           {
             "name": "github.com/tdewolff/minify/v2",
@@ -674,19 +674,19 @@
           },
           {
             "name": "golang.org/x/crypto",
-            "version": "v0.47.0"
+            "version": "v0.48.0"
           },
           {
             "name": "golang.org/x/image",
-            "version": "v0.35.0"
+            "version": "v0.36.0"
           },
           {
             "name": "golang.org/x/mod",
-            "version": "v0.32.0"
+            "version": "v0.33.0"
           },
           {
             "name": "golang.org/x/net",
-            "version": "v0.49.0"
+            "version": "v0.50.0"
           },
           {
             "name": "golang.org/x/sync",
@@ -694,19 +694,19 @@
           },
           {
             "name": "golang.org/x/sys",
-            "version": "v0.40.0"
-          },
-          {
-            "name": "golang.org/x/text",
-            "version": "v0.33.0"
-          },
-          {
-            "name": "golang.org/x/tools",
             "version": "v0.41.0"
           },
           {
+            "name": "golang.org/x/text",
+            "version": "v0.34.0"
+          },
+          {
+            "name": "golang.org/x/tools",
+            "version": "v0.42.0"
+          },
+          {
             "name": "google.golang.org/protobuf",
-            "version": "v1.36.10"
+            "version": "v1.36.11"
           },
           {
             "name": "gopkg.in/yaml.v3",
@@ -1431,7 +1431,7 @@
       "arch": "amd64",
       "app_version": "0.155.3_1_1",
       "source": "pkg",
-      "generated": "2026-02-14T22:01:26Z",
+      "generated": "2026-02-18T22:27:36Z",
       "packages": {
         "freebsd": [
           {
@@ -1664,7 +1664,7 @@
           },
           {
             "name": "libuv",
-            "version": "1.51.0"
+            "version": "1.52.0"
           },
           {
             "name": "llhttp",
@@ -2840,7 +2840,7 @@
       "arch": "amd64",
       "app_version": "0.154.5_2_1",
       "source": "pkg",
-      "generated": "2026-02-14T22:01:51Z",
+      "generated": "2026-02-18T22:25:45Z",
       "packages": {
         "freebsd": [
           {
@@ -3085,11 +3085,11 @@
           },
           {
             "name": "node",
-            "version": "24.12.0_3"
+            "version": "24.13.0_3"
           },
           {
             "name": "node24",
-            "version": "24.12.0"
+            "version": "24.13.0"
           },
           {
             "name": "npm",
