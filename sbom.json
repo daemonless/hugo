@@ -1,12 +1,12 @@
 {
   "image": "hugo",
-  "generated": "2026-02-25T19:22:44Z",
+  "generated": "2026-03-02T22:15:32Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "v0.157.0",
       "source": "upstream",
-      "generated": "2026-02-25T19:21:51Z",
+      "generated": "2026-03-02T22:14:38Z",
       "packages": {
         "freebsd": [
           {
@@ -1429,9 +1429,9 @@
     },
     "pkg-latest": {
       "arch": "amd64",
-      "app_version": "0.156.0_1",
+      "app_version": "0.157.0_1",
       "source": "pkg",
-      "generated": "2026-02-25T19:21:07Z",
+      "generated": "2026-03-02T22:15:18Z",
       "packages": {
         "freebsd": [
           {
@@ -1592,7 +1592,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.156.0,1"
+            "version": "0.157.0,1"
           },
           {
             "name": "icu",
@@ -1664,7 +1664,7 @@
           },
           {
             "name": "libunistring",
-            "version": "1.4.1"
+            "version": "1.4.2"
           },
           {
             "name": "libuv",
@@ -1684,7 +1684,7 @@
           },
           {
             "name": "node24",
-            "version": "24.13.1"
+            "version": "24.13.1_1"
           },
           {
             "name": "npm",
@@ -1724,7 +1724,7 @@
           },
           {
             "name": "simdjson",
-            "version": "4.2.4"
+            "version": "4.3.1"
           },
           {
             "name": "skalibs",
@@ -1815,7 +1815,7 @@
           },
           {
             "name": "github.com/bep/imagemeta",
-            "version": "v0.14.0"
+            "version": "v0.15.0"
           },
           {
             "name": "github.com/bep/lazycache",
@@ -2111,11 +2111,11 @@
           },
           {
             "name": "github.com/tdewolff/minify/v2",
-            "version": "v2.24.8"
+            "version": "v2.24.9"
           },
           {
             "name": "github.com/tdewolff/parse/v2",
-            "version": "v2.8.5"
+            "version": "v2.8.8"
           },
           {
             "name": "github.com/tetratelabs/wazero",
@@ -2848,7 +2848,7 @@
       "arch": "amd64",
       "app_version": "0.154.5_2_1",
       "source": "pkg",
-      "generated": "2026-02-25T19:22:33Z",
+      "generated": "2026-03-02T22:14:43Z",
       "packages": {
         "freebsd": [
           {
