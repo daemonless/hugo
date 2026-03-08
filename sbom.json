@@ -1,12 +1,12 @@
 {
   "image": "hugo",
-  "generated": "2026-03-02T22:15:32Z",
+  "generated": "2026-03-08T09:25:51Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "v0.157.0",
       "source": "upstream",
-      "generated": "2026-03-02T22:14:38Z",
+      "generated": "2026-03-08T09:24:33Z",
       "packages": {
         "freebsd": [
           {
@@ -151,7 +151,7 @@
           },
           {
             "name": "expat",
-            "version": "2.7.3"
+            "version": "2.7.4"
           },
           {
             "name": "gettext-runtime",
@@ -251,7 +251,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_2"
+            "version": "3.11.15"
           },
           {
             "name": "readline",
@@ -997,7 +997,7 @@
           },
           {
             "name": "immutable",
-            "version": "5.1.4"
+            "version": "5.1.5"
           },
           {
             "name": "imurmurhash",
@@ -1429,9 +1429,9 @@
     },
     "pkg-latest": {
       "arch": "amd64",
-      "app_version": "0.157.0_1",
+      "app_version": "0.157.0_1_1",
       "source": "pkg",
-      "generated": "2026-03-02T22:15:18Z",
+      "generated": "2026-03-08T09:25:07Z",
       "packages": {
         "freebsd": [
           {
@@ -1592,7 +1592,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.157.0,1"
+            "version": "0.157.0_1,1"
           },
           {
             "name": "icu",
@@ -1620,7 +1620,7 @@
           },
           {
             "name": "libada",
-            "version": "3.4.2"
+            "version": "3.4.3"
           },
           {
             "name": "libdeflate",
@@ -1700,7 +1700,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.5.1"
+            "version": "2.6.2"
           },
           {
             "name": "png",
@@ -1708,7 +1708,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_2"
+            "version": "3.11.15"
           },
           {
             "name": "readline",
@@ -1759,7 +1759,7 @@
           },
           {
             "name": "stdlib",
-            "version": "v1.25.7"
+            "version": "v1.25.8"
           },
           {
             "name": "github.com/BurntSushi/locker",
@@ -2846,9 +2846,9 @@
     },
     "pkg": {
       "arch": "amd64",
-      "app_version": "0.154.5_2_1",
+      "app_version": "0.154.5_3_1",
       "source": "pkg",
-      "generated": "2026-03-02T22:14:43Z",
+      "generated": "2026-03-08T09:25:40Z",
       "packages": {
         "freebsd": [
           {
@@ -2989,7 +2989,7 @@
           },
           {
             "name": "expat",
-            "version": "2.7.3"
+            "version": "2.7.4"
           },
           {
             "name": "gettext-runtime",
@@ -3009,7 +3009,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.154.5_2,1"
+            "version": "0.154.5_3,1"
           },
           {
             "name": "icu",
@@ -3121,7 +3121,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_2"
+            "version": "3.11.15"
           },
           {
             "name": "readline",
