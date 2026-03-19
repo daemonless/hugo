@@ -5,15 +5,29 @@ Source: dbuild templates
 
 # Hugo
 
-The world's fastest framework for building websites.
+[![Build Status](https://img.shields.io/github/actions/workflow/status/daemonless/hugo/build.yaml?style=flat-square&label=Build&color=green)](https://github.com/daemonless/hugo/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/daemonless/hugo?style=flat-square&label=Last+Commit&color=blue)](https://github.com/daemonless/hugo/commits)
+
+Fast and flexible static site generator — builds your entire site at creation time rather than on each request.
 
 | | |
 |---|---|
 | **Port** | 1313 |
 | **Registry** | `ghcr.io/daemonless/hugo` |
-| **Docs** | [daemonless.io/images/hugo](https://daemonless.io/images/hugo/) |
 | **Source** | [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo) |
 | **Website** | [https://gohugo.io/](https://gohugo.io/) |
+
+## Version Tags
+
+| Tag | Description | Best For |
+| :--- | :--- | :--- |
+| `latest` | **Upstream Binary**. Built from official release. | Most users. Matches Linux Docker behavior. |
+| `pkg` | **FreeBSD Quarterly**. Uses stable, tested packages. | Production stability. |
+| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+
+## Prerequisites
+
+Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
 
 ## Deployment
 
@@ -30,10 +44,56 @@ services:
       - TZ=UTC
       - HUGO_BASEURL=http://localhost:1313
     volumes:
-      - /path/to/containers/hugo/app:/app
+      - "/path/to/containers/hugo/app:/app"
     ports:
       - 1313:1313
     restart: unless-stopped
+```
+
+### AppJail Director
+
+**.env**:
+
+```
+DIRECTOR_PROJECT=hugo
+PUID=1000
+PGID=1000
+TZ=UTC
+HUGO_BASEURL=http://localhost:1313
+```
+
+**appjail-director.yml**:
+
+```yaml
+options:
+  - virtualnet: ':<random> default'
+  - nat:
+services:
+  hugo:
+    name: hugo
+    options:
+      - container: 'boot args:--pull'
+    oci:
+      user: root
+      environment:
+        - PUID: !ENV '${PUID}'
+        - PGID: !ENV '${PGID}'
+        - TZ: !ENV '${TZ}'
+        - HUGO_BASEURL: !ENV '${HUGO_BASEURL}'
+    volumes:
+      - hugo_app: /app
+volumes:
+  hugo_app:
+    device: '/path/to/containers/hugo/app'
+```
+
+**Makejail**:
+
+```
+ARG tag=latest
+
+OPTION overwrite=force
+OPTION from=ghcr.io/daemonless/hugo:${tag}
 ```
 
 ### Podman CLI
@@ -41,14 +101,13 @@ services:
 ```bash
 podman run -d --name hugo \
   -p 1313:1313 \
-  -e PUID=@PUID@ \
-  -e PGID=@PGID@ \
-  -e TZ=@TZ@ \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=UTC \
   -e HUGO_BASEURL=http://localhost:1313 \
   -v /path/to/containers/hugo/app:/app \
   ghcr.io/daemonless/hugo:latest
 ```
-Access at: `http://localhost:1313`
 
 ### Ansible
 
@@ -60,9 +119,9 @@ Access at: `http://localhost:1313`
     state: started
     restart_policy: always
     env:
-      PUID: "@PUID@"
-      PGID: "@PGID@"
-      TZ: "@TZ@"
+      PUID: "1000"
+      PGID: "1000"
+      TZ: "UTC"
       HUGO_BASEURL: "http://localhost:1313"
     ports:
       - "1313:1313"
@@ -70,7 +129,10 @@ Access at: `http://localhost:1313`
       - "/path/to/containers/hugo/app:/app"
 ```
 
-## Configuration
+Access at: `http://localhost:1313`
+
+## Parameters
+
 ### Environment Variables
 
 | Variable | Default | Description |
@@ -79,19 +141,23 @@ Access at: `http://localhost:1313`
 | `PGID` | `1000` | Group ID for the application process |
 | `TZ` | `UTC` | Timezone for the container |
 | `HUGO_BASEURL` | `http://localhost:1313` | Hostname (and path) to the root |
+
 ### Volumes
 
 | Path | Description |
 |------|-------------|
 | `/app` | Website source code (mount your repo here) |
+
 ### Ports
 
 | Port | Protocol | Description |
 |------|----------|-------------|
 | `1313` | TCP | Dev Server Port |
 
-## Notes
+**Architectures:** amd64
+**User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
+**Base:** FreeBSD 15.0
 
-- **Architectures:** amd64
-- **User:** `bsd` (UID/GID set via PUID/PGID)
-- **Base:** Built on `ghcr.io/daemonless/base` (FreeBSD)
+---
+
+Need help? Join our [Discord](https://discord.gg/Kb9tkhecZT) community.

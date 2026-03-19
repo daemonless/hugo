@@ -17,7 +17,7 @@ ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
 
 # --- Metadata (Injected by Generator) ---
 LABEL org.opencontainers.image.title="Hugo" \
-      org.opencontainers.image.description="The world's fastest framework for building websites." \
+      org.opencontainers.image.description="Fast and flexible static site generator — builds your entire site at creation time rather than on each request." \
       org.opencontainers.image.source="https://github.com/daemonless/hugo" \
       org.opencontainers.image.url="https://gohugo.io/" \
       org.opencontainers.image.documentation="https://gohugo.io/documentation/" \

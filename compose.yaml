@@ -4,14 +4,15 @@ x-daemonless:
   title: "Hugo"
   icon: ":simple-hugo:"
   category: "Development"
-  description: "The world's fastest framework for building websites."
+  description: "Fast and flexible static site generator — builds your entire site at creation time rather than on each request."
   upstream_url: "https://github.com/gohugoio/hugo"
   web_url: "https://gohugo.io/"
   freshports_url: "https://www.freshports.org/www/gohugo/"
   user: "bsd"
   mlock: false
   upstream_binary: true
-  
+  appjail: true
+
   docs:
     env:
       PUID: "User ID for the application process"
