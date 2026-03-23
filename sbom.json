@@ -1,12 +1,12 @@
 {
   "image": "hugo",
-  "generated": "2026-03-20T08:12:48Z",
+  "generated": "2026-03-23T21:32:20Z",
   "tags": {
     "latest": {
       "arch": "amd64",
-      "app_version": "v0.158.0",
+      "app_version": "v0.159.0",
       "source": "upstream",
-      "generated": "2026-03-20T08:10:55Z",
+      "generated": "2026-03-23T21:32:06Z",
       "packages": {
         "freebsd": [
           {
@@ -286,7 +286,7 @@
         "go": [
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.157.1-0.20260316174204-f41be7959a44+dirty"
+            "version": "v0.158.1-0.20260323181659-2ed7d193cfdf+dirty"
           },
           {
             "name": "stdlib",
@@ -394,15 +394,11 @@
           },
           {
             "name": "github.com/clipperhouse/displaywidth",
-            "version": "v0.6.2"
-          },
-          {
-            "name": "github.com/clipperhouse/stringish",
-            "version": "v0.1.1"
+            "version": "v0.10.0"
           },
           {
             "name": "github.com/clipperhouse/uax29/v2",
-            "version": "v2.3.0"
+            "version": "v2.6.0"
           },
           {
             "name": "github.com/cpuguy83/go-md2man/v2",
@@ -578,15 +574,15 @@
           },
           {
             "name": "github.com/olekukonko/errors",
-            "version": "v1.1.0"
+            "version": "v1.2.0"
           },
           {
             "name": "github.com/olekukonko/ll",
-            "version": "v0.1.4-0.20260115111900-9e59c2286df0"
+            "version": "v0.1.6"
           },
           {
             "name": "github.com/olekukonko/tablewriter",
-            "version": "v1.1.3"
+            "version": "v1.1.4"
           },
           {
             "name": "github.com/pbnjay/memory",
@@ -654,7 +650,7 @@
           },
           {
             "name": "github.com/yuin/goldmark",
-            "version": "v1.7.16"
+            "version": "v1.7.17"
           },
           {
             "name": "github.com/yuin/goldmark-emoji",
@@ -674,7 +670,7 @@
           },
           {
             "name": "golang.org/x/image",
-            "version": "v0.36.0"
+            "version": "v0.37.0"
           },
           {
             "name": "golang.org/x/mod",
@@ -1413,21 +1409,21 @@
       "summary": {
         "freebsd": 68,
         "dotnet": 0,
-        "go": 108,
+        "go": 107,
         "java": 0,
         "node": 170,
         "php": 0,
         "python": 1,
         "ruby": 0,
         "rust": 0,
-        "total": 347
+        "total": 346
       }
     },
     "pkg-latest": {
       "arch": "amd64",
       "app_version": "0.158.0_1",
       "source": "pkg",
-      "generated": "2026-03-20T08:10:32Z",
+      "generated": "2026-03-23T21:31:56Z",
       "packages": {
         "freebsd": [
           {
@@ -1553,6 +1549,10 @@
           {
             "name": "c-ares",
             "version": "1.34.6"
+          },
+          {
+            "name": "ca_root_nss",
+            "version": "3.117_2"
           },
           {
             "name": "corepack",
@@ -2808,7 +2808,7 @@
         "rust": []
       },
       "summary": {
-        "freebsd": 84,
+        "freebsd": 85,
         "dotnet": 0,
         "go": 108,
         "java": 0,
@@ -2817,14 +2817,14 @@
         "python": 1,
         "ruby": 0,
         "rust": 0,
-        "total": 341
+        "total": 342
       }
     },
     "pkg": {
       "arch": "amd64",
       "app_version": "0.154.5_3_1",
       "source": "pkg",
-      "generated": "2026-03-20T08:12:38Z",
+      "generated": "2026-03-23T21:31:36Z",
       "packages": {
         "freebsd": [
           {
@@ -2950,6 +2950,10 @@
           {
             "name": "c-ares",
             "version": "1.34.6"
+          },
+          {
+            "name": "ca_root_nss",
+            "version": "3.117_2"
           },
           {
             "name": "corepack",
@@ -4225,7 +4229,7 @@
         "rust": []
       },
       "summary": {
-        "freebsd": 77,
+        "freebsd": 78,
         "dotnet": 0,
         "go": 109,
         "java": 0,
@@ -4234,7 +4238,7 @@
         "python": 1,
         "ruby": 0,
         "rust": 0,
-        "total": 346
+        "total": 347
       }
     }
   }
