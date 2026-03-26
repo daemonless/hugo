@@ -1,12 +1,12 @@
 {
   "image": "hugo",
-  "generated": "2026-03-23T21:32:20Z",
+  "generated": "2026-03-26T16:42:37Z",
   "tags": {
     "latest": {
       "arch": "amd64",
-      "app_version": "v0.159.0",
+      "app_version": "v0.159.1",
       "source": "upstream",
-      "generated": "2026-03-23T21:32:06Z",
+      "generated": "2026-03-26T16:40:43Z",
       "packages": {
         "freebsd": [
           {
@@ -286,7 +286,7 @@
         "go": [
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.158.1-0.20260323181659-2ed7d193cfdf+dirty"
+            "version": "v0.159.1-0.20260326095415-86c7d3afacab+dirty"
           },
           {
             "name": "stdlib",
@@ -634,11 +634,11 @@
           },
           {
             "name": "github.com/tdewolff/minify/v2",
-            "version": "v2.24.10"
+            "version": "v2.24.11"
           },
           {
             "name": "github.com/tdewolff/parse/v2",
-            "version": "v2.8.10"
+            "version": "v2.8.11"
           },
           {
             "name": "github.com/tetratelabs/wazero",
@@ -1423,7 +1423,7 @@
       "arch": "amd64",
       "app_version": "0.158.0_1",
       "source": "pkg",
-      "generated": "2026-03-23T21:31:56Z",
+      "generated": "2026-03-26T16:42:27Z",
       "packages": {
         "freebsd": [
           {
@@ -1568,7 +1568,7 @@
           },
           {
             "name": "expat",
-            "version": "2.7.4"
+            "version": "2.7.5"
           },
           {
             "name": "gettext-runtime",
@@ -2824,7 +2824,7 @@
       "arch": "amd64",
       "app_version": "0.154.5_3_1",
       "source": "pkg",
-      "generated": "2026-03-23T21:31:36Z",
+      "generated": "2026-03-26T16:42:21Z",
       "packages": {
         "freebsd": [
           {
