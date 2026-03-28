@@ -1,12 +1,12 @@
 {
   "image": "hugo",
-  "generated": "2026-03-26T16:42:37Z",
+  "generated": "2026-03-28T16:34:51Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "v0.159.1",
       "source": "upstream",
-      "generated": "2026-03-26T16:40:43Z",
+      "generated": "2026-03-28T16:30:32Z",
       "packages": {
         "freebsd": [
           {
@@ -1423,7 +1423,7 @@
       "arch": "amd64",
       "app_version": "0.158.0_1",
       "source": "pkg",
-      "generated": "2026-03-26T16:42:27Z",
+      "generated": "2026-03-28T16:30:04Z",
       "packages": {
         "freebsd": [
           {
@@ -1736,7 +1736,7 @@
           },
           {
             "name": "simdjson",
-            "version": "4.4.0"
+            "version": "4.4.2"
           },
           {
             "name": "simdutf",
@@ -2824,7 +2824,7 @@
       "arch": "amd64",
       "app_version": "0.154.5_3_1",
       "source": "pkg",
-      "generated": "2026-03-26T16:42:21Z",
+      "generated": "2026-03-28T16:30:35Z",
       "packages": {
         "freebsd": [
           {
