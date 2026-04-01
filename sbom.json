@@ -1,12 +1,12 @@
 {
   "image": "hugo",
-  "generated": "2026-03-29T15:36:48Z",
+  "generated": "2026-04-01T21:31:20Z",
   "tags": {
     "latest": {
       "arch": "amd64",
-      "app_version": "v0.159.1",
+      "app_version": "v0.159.2",
       "source": "upstream",
-      "generated": "2026-03-29T15:36:35Z",
+      "generated": "2026-04-01T21:30:03Z",
       "packages": {
         "freebsd": [
           {
@@ -286,7 +286,7 @@
         "go": [
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.159.1-0.20260326095415-86c7d3afacab+dirty"
+            "version": "v0.159.2-0.20260401125920-5f4646acaad8+dirty"
           },
           {
             "name": "stdlib",
@@ -1423,7 +1423,7 @@
       "arch": "amd64",
       "app_version": "0.159.1_1",
       "source": "pkg",
-      "generated": "2026-03-29T15:33:00Z",
+      "generated": "2026-04-01T21:29:23Z",
       "packages": {
         "freebsd": [
           {
@@ -1696,7 +1696,7 @@
           },
           {
             "name": "node24",
-            "version": "24.14.0_1"
+            "version": "24.14.0_2"
           },
           {
             "name": "npm",
@@ -1736,7 +1736,7 @@
           },
           {
             "name": "simdjson",
-            "version": "4.4.2"
+            "version": "4.5.0"
           },
           {
             "name": "simdutf",
@@ -2820,7 +2820,7 @@
       "arch": "amd64",
       "app_version": "0.154.5_3_1",
       "source": "pkg",
-      "generated": "2026-03-29T15:31:41Z",
+      "generated": "2026-04-01T21:30:00Z",
       "packages": {
         "freebsd": [
           {
