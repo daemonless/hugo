@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-04T20:16:10Z",
+  "generated": "2026-04-05T19:41:10Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.160.0",
       "arch": "amd64",
-      "generated": "2026-04-04T20:14:24Z",
+      "generated": "2026-04-05T19:39:25Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1418,7 +1418,7 @@
     "pkg": {
       "app_version": "0.154.5_3_1",
       "arch": "amd64",
-      "generated": "2026-04-04T20:15:01Z",
+      "generated": "2026-04-05T19:40:00Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2833,9 +2833,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.159.1_1",
+      "app_version": "0.159.2_1",
       "arch": "amd64",
-      "generated": "2026-04-04T20:14:16Z",
+      "generated": "2026-04-05T19:39:23Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2985,7 +2985,7 @@
           },
           {
             "name": "gettext-runtime",
-            "version": "0.26"
+            "version": "1.0"
           },
           {
             "name": "giflib",
@@ -3001,7 +3001,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.159.1,1"
+            "version": "0.159.2,1"
           },
           {
             "name": "googletest",
@@ -3037,7 +3037,7 @@
           },
           {
             "name": "libada",
-            "version": "3.4.3"
+            "version": "3.4.4"
           },
           {
             "name": "libdeflate",
@@ -3133,7 +3133,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.15"
+            "version": "3.11.15_1"
           },
           {
             "name": "readline",
