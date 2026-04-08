@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-07T14:58:04Z",
+  "generated": "2026-04-08T22:44:29Z",
   "image": "hugo",
   "tags": {
     "latest": {
-      "app_version": "v0.160.0",
+      "app_version": "v0.160.1",
       "arch": "amd64",
-      "generated": "2026-04-07T14:47:39Z",
+      "generated": "2026-04-08T22:40:59Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -485,7 +485,7 @@
           },
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.159.3-0.20260404133234-652fc5acddf9+dirty"
+            "version": "v0.160.1-0.20260408140242-d6bc8165e62b+dirty"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
@@ -1402,7 +1402,7 @@
     "pkg": {
       "app_version": "0.159.2_1",
       "arch": "amd64",
-      "generated": "2026-04-07T14:47:30Z",
+      "generated": "2026-04-08T22:42:33Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2793,9 +2793,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.159.2_1",
+      "app_version": "0.160.0_1",
       "arch": "amd64",
-      "generated": "2026-04-07T14:49:26Z",
+      "generated": "2026-04-08T22:43:19Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2933,7 +2933,7 @@
           },
           {
             "name": "curl",
-            "version": "8.19.0_1"
+            "version": "8.19.0_2"
           },
           {
             "name": "execline",
@@ -2961,7 +2961,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.159.2,1"
+            "version": "0.160.0,1"
           },
           {
             "name": "googletest",
@@ -2993,7 +2993,7 @@
           },
           {
             "name": "lerc",
-            "version": "4.0.0"
+            "version": "4.1.0"
           },
           {
             "name": "libada",
@@ -3017,7 +3017,7 @@
           },
           {
             "name": "libnghttp2",
-            "version": "1.68.0"
+            "version": "1.68.1"
           },
           {
             "name": "libnghttp3",
@@ -3025,7 +3025,7 @@
           },
           {
             "name": "libngtcp2",
-            "version": "1.21.0"
+            "version": "1.22.0"
           },
           {
             "name": "libpsl",
@@ -3045,7 +3045,7 @@
           },
           {
             "name": "libuv",
-            "version": "1.52.0"
+            "version": "1.52.1"
           },
           {
             "name": "llhttp",
@@ -3053,7 +3053,7 @@
           },
           {
             "name": "merve",
-            "version": "1.2.0_1"
+            "version": "1.2.2"
           },
           {
             "name": "mpdecimal",
@@ -3065,19 +3065,19 @@
           },
           {
             "name": "node",
-            "version": "24.14.0_3"
+            "version": "24.14.1_3"
           },
           {
             "name": "node24",
-            "version": "24.14.0_2"
+            "version": "24.14.1"
           },
           {
             "name": "npm",
-            "version": "11.11.0"
+            "version": "11.12.1"
           },
           {
             "name": "npm-node24",
-            "version": "11.11.0"
+            "version": "11.12.1"
           },
           {
             "name": "oniguruma",
@@ -3089,11 +3089,11 @@
           },
           {
             "name": "png",
-            "version": "1.6.55"
+            "version": "1.6.56"
           },
           {
             "name": "python311",
-            "version": "3.11.15_1"
+            "version": "3.11.15_2"
           },
           {
             "name": "readline",
@@ -3319,11 +3319,11 @@
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
-            "version": "v0.6.0"
+            "version": "v0.7.0"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/passthrough",
-            "version": "v0.4.0"
+            "version": "v0.5.0"
           },
           {
             "name": "github.com/google/go-cmp",
@@ -3499,7 +3499,7 @@
           },
           {
             "name": "github.com/yuin/goldmark",
-            "version": "v1.7.17"
+            "version": "v1.8.2"
           },
           {
             "name": "github.com/yuin/goldmark-emoji",
@@ -3519,7 +3519,7 @@
           },
           {
             "name": "golang.org/x/image",
-            "version": "v0.37.0"
+            "version": "v0.38.0"
           },
           {
             "name": "golang.org/x/mod",
@@ -3570,7 +3570,7 @@
         "node": [
           {
             "name": "@gar/promise-retry",
-            "version": "1.0.2"
+            "version": "1.0.3"
           },
           {
             "name": "@isaacs/fs-minipass",
@@ -3586,11 +3586,11 @@
           },
           {
             "name": "@npmcli/arborist",
-            "version": "9.4.0"
+            "version": "9.4.2"
           },
           {
             "name": "@npmcli/config",
-            "version": "10.7.1"
+            "version": "10.8.1"
           },
           {
             "name": "@npmcli/fs",
@@ -3638,7 +3638,7 @@
           },
           {
             "name": "@npmcli/run-script",
-            "version": "10.0.3"
+            "version": "10.0.4"
           },
           {
             "name": "@sigstore/bundle",
@@ -3646,7 +3646,7 @@
           },
           {
             "name": "@sigstore/core",
-            "version": "3.1.0"
+            "version": "3.2.0"
           },
           {
             "name": "@sigstore/protobuf-specs",
@@ -3654,11 +3654,11 @@
           },
           {
             "name": "@sigstore/sign",
-            "version": "4.1.0"
+            "version": "4.1.1"
           },
           {
             "name": "@sigstore/tuf",
-            "version": "4.0.1"
+            "version": "4.0.2"
           },
           {
             "name": "@sigstore/verify",
@@ -3702,11 +3702,11 @@
           },
           {
             "name": "brace-expansion",
-            "version": "5.0.3"
+            "version": "5.0.4"
           },
           {
             "name": "cacache",
-            "version": "20.0.3"
+            "version": "20.0.4"
           },
           {
             "name": "chalk",
@@ -3751,10 +3751,6 @@
           {
             "name": "env-paths",
             "version": "2.2.1"
-          },
-          {
-            "name": "err-code",
-            "version": "2.0.3"
           },
           {
             "name": "exponential-backoff",
@@ -3805,10 +3801,6 @@
             "version": "8.0.0"
           },
           {
-            "name": "imurmurhash",
-            "version": "0.1.4"
-          },
-          {
             "name": "ini",
             "version": "6.0.0"
           },
@@ -3854,15 +3846,15 @@
           },
           {
             "name": "libnpmdiff",
-            "version": "8.1.3"
+            "version": "8.1.5"
           },
           {
             "name": "libnpmexec",
-            "version": "10.2.3"
+            "version": "10.2.5"
           },
           {
             "name": "libnpmfund",
-            "version": "7.0.17"
+            "version": "7.0.19"
           },
           {
             "name": "libnpmorg",
@@ -3870,7 +3862,7 @@
           },
           {
             "name": "libnpmpack",
-            "version": "9.1.3"
+            "version": "9.1.5"
           },
           {
             "name": "libnpmpublish",
@@ -3890,15 +3882,15 @@
           },
           {
             "name": "lru-cache",
-            "version": "11.2.6"
+            "version": "11.2.7"
           },
           {
             "name": "make-fetch-happen",
-            "version": "15.0.4"
+            "version": "15.0.5"
           },
           {
             "name": "minimatch",
-            "version": "10.2.2"
+            "version": "10.2.4"
           },
           {
             "name": "minipass",
@@ -3950,7 +3942,7 @@
           },
           {
             "name": "npm",
-            "version": "11.11.0"
+            "version": "11.12.1"
           },
           {
             "name": "npm-audit-report",
@@ -3998,7 +3990,7 @@
           },
           {
             "name": "pacote",
-            "version": "21.4.0"
+            "version": "21.5.0"
           },
           {
             "name": "parse-conflict-json",
@@ -4033,10 +4025,6 @@
             "version": "3.0.2"
           },
           {
-            "name": "promise-retry",
-            "version": "2.0.1"
-          },
-          {
             "name": "promzard",
             "version": "3.0.1"
           },
@@ -4051,10 +4039,6 @@
           {
             "name": "read-cmd-shim",
             "version": "6.0.0"
-          },
-          {
-            "name": "retry",
-            "version": "0.12.0"
           },
           {
             "name": "safer-buffer",
@@ -4106,7 +4090,7 @@
           },
           {
             "name": "tar",
-            "version": "7.5.9"
+            "version": "7.5.11"
           },
           {
             "name": "text-table",
@@ -4129,14 +4113,6 @@
             "version": "4.1.0"
           },
           {
-            "name": "unique-filename",
-            "version": "5.0.0"
-          },
-          {
-            "name": "unique-slug",
-            "version": "6.0.0"
-          },
-          {
             "name": "util-deprecate",
             "version": "1.0.2"
           },
@@ -4154,7 +4130,7 @@
           },
           {
             "name": "write-file-atomic",
-            "version": "7.0.0"
+            "version": "7.0.1"
           },
           {
             "name": "yallist",
@@ -4177,12 +4153,12 @@
         "freebsd": 84,
         "go": 107,
         "java": 0,
-        "node": 148,
+        "node": 142,
         "php": 0,
         "python": 1,
         "ruby": 0,
         "rust": 0,
-        "total": 340
+        "total": 334
       }
     }
   }
