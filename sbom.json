@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-12T08:26:26Z",
+  "generated": "2026-04-13T11:26:11Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.160.1",
       "arch": "amd64",
-      "generated": "2026-04-12T08:24:59Z",
+      "generated": "2026-04-13T11:24:05Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -187,7 +187,7 @@
           },
           {
             "name": "libada",
-            "version": "3.4.3"
+            "version": "3.4.4"
           },
           {
             "name": "libedit",
@@ -1402,7 +1402,7 @@
     "pkg": {
       "app_version": "0.159.2_1_1",
       "arch": "amd64",
-      "generated": "2026-04-12T08:24:54Z",
+      "generated": "2026-04-13T11:24:59Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1604,7 +1604,7 @@
           },
           {
             "name": "libada",
-            "version": "3.4.3"
+            "version": "3.4.4"
           },
           {
             "name": "libdeflate",
@@ -2793,9 +2793,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.160.0_1",
+      "app_version": "0.160.1_1_1",
       "arch": "amd64",
-      "generated": "2026-04-12T08:25:14Z",
+      "generated": "2026-04-13T11:24:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2961,7 +2961,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.160.0,1"
+            "version": "0.160.1_1,1"
           },
           {
             "name": "googletest",
@@ -3089,7 +3089,7 @@
           },
           {
             "name": "png",
-            "version": "1.6.56"
+            "version": "1.6.57"
           },
           {
             "name": "python311",
@@ -3121,7 +3121,7 @@
           },
           {
             "name": "tiff",
-            "version": "4.7.1"
+            "version": "4.7.1_1"
           },
           {
             "name": "uvwasi",
@@ -3563,7 +3563,7 @@
           },
           {
             "name": "stdlib",
-            "version": "v1.25.8"
+            "version": "v1.25.9"
           }
         ],
         "java": [],
