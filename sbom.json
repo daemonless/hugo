@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-28T20:42:49Z",
+  "generated": "2026-04-29T17:26:55Z",
   "image": "hugo",
   "tags": {
     "latest": {
-      "app_version": "v0.161.0",
+      "app_version": "v0.161.1",
       "arch": "amd64",
-      "generated": "2026-04-28T20:41:27Z",
+      "generated": "2026-04-29T17:24:15Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -485,7 +485,7 @@
           },
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.160.2-0.20260428114632-98d396c16a07+dirty"
+            "version": "v0.161.1-0.20260429135601-ea8f66a7ce98+dirty"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_1_1",
       "arch": "amd64",
-      "generated": "2026-04-28T20:41:37Z",
+      "generated": "2026-04-29T17:24:48Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2799,7 +2799,7 @@
     "pkg-latest": {
       "app_version": "0.160.1_1_1",
       "arch": "amd64",
-      "generated": "2026-04-28T20:41:04Z",
+      "generated": "2026-04-29T17:25:36Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
