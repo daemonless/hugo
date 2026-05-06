@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-29T17:26:55Z",
+  "generated": "2026-05-06T11:11:47Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.161.1",
       "arch": "amd64",
-      "generated": "2026-04-29T17:24:15Z",
+      "generated": "2026-05-06T11:10:02Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -143,7 +143,7 @@
           },
           {
             "name": "curl",
-            "version": "8.19.0_1"
+            "version": "8.19.0_2"
           },
           {
             "name": "execline",
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_1_1",
       "arch": "amd64",
-      "generated": "2026-04-29T17:24:48Z",
+      "generated": "2026-05-06T11:10:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1544,7 +1544,7 @@
           },
           {
             "name": "curl",
-            "version": "8.19.0_1"
+            "version": "8.19.0_2"
           },
           {
             "name": "execline",
@@ -2797,9 +2797,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.160.1_1_1",
+      "app_version": "0.161.0_1",
       "arch": "amd64",
-      "generated": "2026-04-29T17:25:36Z",
+      "generated": "2026-05-06T11:10:28Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2937,7 +2937,7 @@
           },
           {
             "name": "curl",
-            "version": "8.19.0_2"
+            "version": "8.20.0"
           },
           {
             "name": "execline",
@@ -2945,7 +2945,7 @@
           },
           {
             "name": "expat",
-            "version": "2.7.5"
+            "version": "2.8.0"
           },
           {
             "name": "gettext-runtime",
@@ -2965,7 +2965,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.160.1_1,1"
+            "version": "0.161.0,1"
           },
           {
             "name": "googletest",
@@ -3053,11 +3053,11 @@
           },
           {
             "name": "llhttp",
-            "version": "9.3.1"
+            "version": "9.4.1"
           },
           {
             "name": "merve",
-            "version": "1.2.2"
+            "version": "1.2.2_1"
           },
           {
             "name": "mpdecimal",
@@ -3073,7 +3073,7 @@
           },
           {
             "name": "node24",
-            "version": "24.15.0"
+            "version": "24.15.0_1"
           },
           {
             "name": "npm",
@@ -3089,7 +3089,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.4"
+            "version": "2.7.5"
           },
           {
             "name": "png",
@@ -3113,7 +3113,7 @@
           },
           {
             "name": "simdutf",
-            "version": "8.2.0"
+            "version": "9.0.0"
           },
           {
             "name": "skalibs",
@@ -3191,7 +3191,7 @@
           },
           {
             "name": "github.com/bep/goportabletext",
-            "version": "v0.1.0"
+            "version": "v0.2.0"
           },
           {
             "name": "github.com/bep/helpers",
@@ -3199,7 +3199,7 @@
           },
           {
             "name": "github.com/bep/imagemeta",
-            "version": "v0.17.0"
+            "version": "v0.17.2"
           },
           {
             "name": "github.com/bep/lazycache",
@@ -3211,7 +3211,7 @@
           },
           {
             "name": "github.com/bep/mclib",
-            "version": "v1.20400.20402"
+            "version": "v1.20401.20400"
           },
           {
             "name": "github.com/bep/overlayfs",
@@ -3259,7 +3259,7 @@
           },
           {
             "name": "github.com/evanw/esbuild",
-            "version": "v0.27.4"
+            "version": "v0.28.0"
           },
           {
             "name": "github.com/fatih/color",
@@ -3275,7 +3275,7 @@
           },
           {
             "name": "github.com/getkin/kin-openapi",
-            "version": "v0.134.0"
+            "version": "v0.137.0"
           },
           {
             "name": "github.com/go-openapi/jsonpointer",
@@ -3387,7 +3387,7 @@
           },
           {
             "name": "github.com/mattn/go-isatty",
-            "version": "v0.0.20"
+            "version": "v0.0.22"
           },
           {
             "name": "github.com/mattn/go-runewidth",
@@ -3415,11 +3415,11 @@
           },
           {
             "name": "github.com/oasdiff/yaml",
-            "version": "v0.0.0-20260313112342-a3ea61cb4d4c"
+            "version": "v0.0.9"
           },
           {
             "name": "github.com/oasdiff/yaml3",
-            "version": "v0.0.0-20260224194419-61cd415a242b"
+            "version": "v0.0.12"
           },
           {
             "name": "github.com/olekukonko/cat",
@@ -3443,7 +3443,7 @@
           },
           {
             "name": "github.com/pelletier/go-toml/v2",
-            "version": "v2.2.4"
+            "version": "v2.3.0"
           },
           {
             "name": "github.com/perimeterx/marshmallow",
@@ -3464,6 +3464,10 @@
           {
             "name": "github.com/russross/blackfriday/v2",
             "version": "v2.1.0"
+          },
+          {
+            "name": "github.com/santhosh-tekuri/jsonschema/v6",
+            "version": "v6.0.2"
           },
           {
             "name": "github.com/spf13/afero",
@@ -3487,11 +3491,11 @@
           },
           {
             "name": "github.com/tdewolff/minify/v2",
-            "version": "v2.24.11"
+            "version": "v2.24.13"
           },
           {
             "name": "github.com/tdewolff/parse/v2",
-            "version": "v2.8.11"
+            "version": "v2.8.12"
           },
           {
             "name": "github.com/tetratelabs/wazero",
@@ -3519,19 +3523,19 @@
           },
           {
             "name": "golang.org/x/crypto",
-            "version": "v0.49.0"
+            "version": "v0.50.0"
           },
           {
             "name": "golang.org/x/image",
-            "version": "v0.38.0"
+            "version": "v0.39.0"
           },
           {
             "name": "golang.org/x/mod",
-            "version": "v0.34.0"
+            "version": "v0.35.0"
           },
           {
             "name": "golang.org/x/net",
-            "version": "v0.52.0"
+            "version": "v0.53.0"
           },
           {
             "name": "golang.org/x/sync",
@@ -3539,15 +3543,15 @@
           },
           {
             "name": "golang.org/x/sys",
-            "version": "v0.42.0"
+            "version": "v0.43.0"
           },
           {
             "name": "golang.org/x/text",
-            "version": "v0.35.0"
+            "version": "v0.36.0"
           },
           {
             "name": "golang.org/x/tools",
-            "version": "v0.43.0"
+            "version": "v0.44.0"
           },
           {
             "name": "google.golang.org/protobuf",
@@ -3563,7 +3567,7 @@
           },
           {
             "name": "software.sslmate.com/src/go-pkcs12",
-            "version": "v0.2.0"
+            "version": "v0.7.0"
           },
           {
             "name": "stdlib",
@@ -4155,14 +4159,14 @@
       "summary": {
         "dotnet": 0,
         "freebsd": 84,
-        "go": 107,
+        "go": 108,
         "java": 0,
         "node": 142,
         "php": 0,
         "python": 1,
         "ruby": 0,
         "rust": 0,
-        "total": 334
+        "total": 335
       }
     }
   }
