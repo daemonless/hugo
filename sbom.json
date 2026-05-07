@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-06T11:11:47Z",
+  "generated": "2026-05-07T20:51:27Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.161.1",
       "arch": "amd64",
-      "generated": "2026-05-06T11:10:02Z",
+      "generated": "2026-05-07T20:49:20Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -95,7 +95,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p6"
+            "version": "15.0p8"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -123,7 +123,7 @@
           },
           {
             "name": "FreeBSD-zoneinfo",
-            "version": "15.0"
+            "version": "15.0p7"
           },
           {
             "name": "brotli",
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_1_1",
       "arch": "amd64",
-      "generated": "2026-05-06T11:10:09Z",
+      "generated": "2026-05-07T20:48:48Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1496,7 +1496,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p6"
+            "version": "15.0p8"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -1524,7 +1524,7 @@
           },
           {
             "name": "FreeBSD-zoneinfo",
-            "version": "15.0"
+            "version": "15.0p7"
           },
           {
             "name": "brotli",
@@ -2797,9 +2797,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.161.0_1",
+      "app_version": "0.161.1_1",
       "arch": "amd64",
-      "generated": "2026-05-06T11:10:28Z",
+      "generated": "2026-05-07T20:50:06Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2889,7 +2889,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p6"
+            "version": "15.0p8"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -2917,7 +2917,7 @@
           },
           {
             "name": "FreeBSD-zoneinfo",
-            "version": "15.0"
+            "version": "15.0p7"
           },
           {
             "name": "brotli",
@@ -2965,7 +2965,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.161.0,1"
+            "version": "0.161.1,1"
           },
           {
             "name": "googletest",
