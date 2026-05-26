@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-15T07:33:53Z",
+  "generated": "2026-05-26T14:30:46Z",
   "image": "hugo",
   "tags": {
     "latest": {
-      "app_version": "v0.161.1",
+      "app_version": "v0.162.0",
       "arch": "amd64",
-      "generated": "2026-05-15T07:32:08Z",
+      "generated": "2026-05-26T14:27:57Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -51,7 +51,7 @@
           },
           {
             "name": "FreeBSD-libcasper",
-            "version": "15.0"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-libexecinfo",
@@ -95,7 +95,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p8"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -107,7 +107,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.0p1"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -135,7 +135,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.123.1"
+            "version": "3.124"
           },
           {
             "name": "corepack",
@@ -151,7 +151,7 @@
           },
           {
             "name": "expat",
-            "version": "2.8.0"
+            "version": "2.8.1"
           },
           {
             "name": "gettext-runtime",
@@ -317,11 +317,11 @@
           },
           {
             "name": "github.com/JohannesKaufmann/html-to-markdown/v2",
-            "version": "v2.5.0"
+            "version": "v2.5.1"
           },
           {
             "name": "github.com/alecthomas/chroma/v2",
-            "version": "v2.23.1"
+            "version": "v2.24.1"
           },
           {
             "name": "github.com/aymerick/douceur",
@@ -361,7 +361,7 @@
           },
           {
             "name": "github.com/bep/helpers",
-            "version": "v0.8.0"
+            "version": "v0.12.0"
           },
           {
             "name": "github.com/bep/imagemeta",
@@ -421,7 +421,7 @@
           },
           {
             "name": "github.com/dlclark/regexp2",
-            "version": "v1.11.5"
+            "version": "v1.12.0"
           },
           {
             "name": "github.com/evanw/esbuild",
@@ -441,7 +441,7 @@
           },
           {
             "name": "github.com/getkin/kin-openapi",
-            "version": "v0.137.0"
+            "version": "v0.138.0"
           },
           {
             "name": "github.com/go-openapi/jsonpointer",
@@ -485,7 +485,7 @@
           },
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.161.1-0.20260429135601-ea8f66a7ce98+dirty"
+            "version": "v0.161.2-0.20260526135344-076dfe13d0f7+dirty"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
@@ -609,7 +609,7 @@
           },
           {
             "name": "github.com/pelletier/go-toml/v2",
-            "version": "v2.3.0"
+            "version": "v2.3.1"
           },
           {
             "name": "github.com/perimeterx/marshmallow",
@@ -665,7 +665,7 @@
           },
           {
             "name": "github.com/tetratelabs/wazero",
-            "version": "v1.11.0"
+            "version": "v1.11.1-0.20260521072212-475a1f8f0dc3"
           },
           {
             "name": "github.com/woodsbury/decimal128",
@@ -689,19 +689,19 @@
           },
           {
             "name": "golang.org/x/crypto",
-            "version": "v0.50.0"
+            "version": "v0.51.0"
           },
           {
             "name": "golang.org/x/image",
-            "version": "v0.39.0"
+            "version": "v0.41.0"
           },
           {
             "name": "golang.org/x/mod",
-            "version": "v0.35.0"
+            "version": "v0.36.0"
           },
           {
             "name": "golang.org/x/net",
-            "version": "v0.53.0"
+            "version": "v0.55.0"
           },
           {
             "name": "golang.org/x/sync",
@@ -709,15 +709,15 @@
           },
           {
             "name": "golang.org/x/sys",
-            "version": "v0.43.0"
+            "version": "v0.45.0"
           },
           {
             "name": "golang.org/x/text",
-            "version": "v0.36.0"
+            "version": "v0.37.0"
           },
           {
             "name": "golang.org/x/tools",
-            "version": "v0.44.0"
+            "version": "v0.45.0"
           },
           {
             "name": "google.golang.org/protobuf",
@@ -737,7 +737,7 @@
           },
           {
             "name": "stdlib",
-            "version": "v1.26.1"
+            "version": "v1.26.3"
           }
         ],
         "java": [],
@@ -896,7 +896,7 @@
           },
           {
             "name": "chokidar",
-            "version": "4.0.3"
+            "version": "5.0.0"
           },
           {
             "name": "chownr",
@@ -1260,7 +1260,7 @@
           },
           {
             "name": "readdirp",
-            "version": "4.1.2"
+            "version": "5.0.0"
           },
           {
             "name": "retry",
@@ -1272,7 +1272,7 @@
           },
           {
             "name": "sass",
-            "version": "1.99.0"
+            "version": "1.100.0"
           },
           {
             "name": "semver",
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_2_1",
       "arch": "amd64",
-      "generated": "2026-05-15T07:30:30Z",
+      "generated": "2026-05-26T14:29:33Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1452,7 +1452,7 @@
           },
           {
             "name": "FreeBSD-libcasper",
-            "version": "15.0"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-libexecinfo",
@@ -1496,7 +1496,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p8"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -1508,7 +1508,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.0p1"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -1536,7 +1536,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.117_2"
+            "version": "3.124"
           },
           {
             "name": "corepack",
@@ -1552,7 +1552,7 @@
           },
           {
             "name": "expat",
-            "version": "2.8.0"
+            "version": "2.8.1"
           },
           {
             "name": "gettext-runtime",
@@ -2799,7 +2799,7 @@
     "pkg-latest": {
       "app_version": "0.161.1_1_1",
       "arch": "amd64",
-      "generated": "2026-05-15T07:32:39Z",
+      "generated": "2026-05-26T14:28:32Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2845,7 +2845,7 @@
           },
           {
             "name": "FreeBSD-libcasper",
-            "version": "15.0"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-libexecinfo",
@@ -2889,7 +2889,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p8"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -2901,7 +2901,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.0p1"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -2929,11 +2929,11 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.117_2"
+            "version": "3.124"
           },
           {
             "name": "corepack",
-            "version": "0.34.7"
+            "version": "0.35.0"
           },
           {
             "name": "curl",
@@ -3069,19 +3069,19 @@
           },
           {
             "name": "node",
-            "version": "24.15.0_3"
+            "version": "24.16.0_3"
           },
           {
             "name": "node24",
-            "version": "24.15.0_1"
+            "version": "24.16.0"
           },
           {
             "name": "npm",
-            "version": "11.14.0"
+            "version": "11.15.0"
           },
           {
             "name": "npm-node24",
-            "version": "11.14.0_1"
+            "version": "11.15.0"
           },
           {
             "name": "oniguruma",
@@ -3594,11 +3594,11 @@
           },
           {
             "name": "@npmcli/arborist",
-            "version": "9.5.0"
+            "version": "9.6.0"
           },
           {
             "name": "@npmcli/config",
-            "version": "10.9.0"
+            "version": "10.9.1"
           },
           {
             "name": "@npmcli/fs",
@@ -3702,7 +3702,7 @@
           },
           {
             "name": "bin-links",
-            "version": "6.0.0"
+            "version": "6.0.2"
           },
           {
             "name": "binary-extensions",
@@ -3710,7 +3710,7 @@
           },
           {
             "name": "brace-expansion",
-            "version": "5.0.5"
+            "version": "5.0.6"
           },
           {
             "name": "cacache",
@@ -3742,7 +3742,7 @@
           },
           {
             "name": "corepack",
-            "version": "0.34.7"
+            "version": "0.35.0"
           },
           {
             "name": "cssesc",
@@ -3786,7 +3786,7 @@
           },
           {
             "name": "hosted-git-info",
-            "version": "9.0.2"
+            "version": "9.0.3"
           },
           {
             "name": "http-cache-semantics",
@@ -3818,7 +3818,7 @@
           },
           {
             "name": "ip-address",
-            "version": "10.1.1"
+            "version": "10.2.0"
           },
           {
             "name": "is-cidr",
@@ -3854,15 +3854,15 @@
           },
           {
             "name": "libnpmdiff",
-            "version": "8.1.7"
+            "version": "8.1.8"
           },
           {
             "name": "libnpmexec",
-            "version": "10.2.7"
+            "version": "10.2.8"
           },
           {
             "name": "libnpmfund",
-            "version": "7.0.21"
+            "version": "7.0.22"
           },
           {
             "name": "libnpmorg",
@@ -3870,11 +3870,11 @@
           },
           {
             "name": "libnpmpack",
-            "version": "9.1.7"
+            "version": "9.1.8"
           },
           {
             "name": "libnpmpublish",
-            "version": "11.1.3"
+            "version": "11.2.0"
           },
           {
             "name": "libnpmsearch",
@@ -3890,7 +3890,7 @@
           },
           {
             "name": "lru-cache",
-            "version": "11.3.5"
+            "version": "11.5.0"
           },
           {
             "name": "make-fetch-happen",
@@ -3950,7 +3950,7 @@
           },
           {
             "name": "npm",
-            "version": "11.14.0"
+            "version": "11.15.0"
           },
           {
             "name": "npm-audit-report",
@@ -4054,7 +4054,7 @@
           },
           {
             "name": "semver",
-            "version": "7.7.4"
+            "version": "7.8.0"
           },
           {
             "name": "signal-exit",
@@ -4070,7 +4070,7 @@
           },
           {
             "name": "socks",
-            "version": "2.8.8"
+            "version": "2.8.9"
           },
           {
             "name": "socks-proxy-agent",
@@ -4098,7 +4098,7 @@
           },
           {
             "name": "tar",
-            "version": "7.5.13"
+            "version": "7.5.15"
           },
           {
             "name": "text-table",
