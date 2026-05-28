@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-26T14:30:46Z",
+  "generated": "2026-05-28T21:16:12Z",
   "image": "hugo",
   "tags": {
     "latest": {
-      "app_version": "v0.162.0",
+      "app_version": "v0.162.1",
       "arch": "amd64",
-      "generated": "2026-05-26T14:27:57Z",
+      "generated": "2026-05-28T21:13:34Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -353,7 +353,7 @@
           },
           {
             "name": "github.com/bep/golocales",
-            "version": "v0.1.0"
+            "version": "v0.2.0"
           },
           {
             "name": "github.com/bep/goportabletext",
@@ -485,7 +485,7 @@
           },
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.161.2-0.20260526135344-076dfe13d0f7+dirty"
+            "version": "v0.162.1-0.20260528174044-bba860e3eda3+dirty"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_2_1",
       "arch": "amd64",
-      "generated": "2026-05-26T14:29:33Z",
+      "generated": "2026-05-28T21:14:59Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2799,7 +2799,7 @@
     "pkg-latest": {
       "app_version": "0.161.1_1_1",
       "arch": "amd64",
-      "generated": "2026-05-26T14:28:32Z",
+      "generated": "2026-05-28T21:13:33Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -3020,6 +3020,10 @@
             "version": "2.3.8"
           },
           {
+            "name": "liblz4",
+            "version": "1.10.0_2,1"
+          },
+          {
             "name": "libnghttp2",
             "version": "1.69.0"
           },
@@ -3137,7 +3141,7 @@
           },
           {
             "name": "zstd",
-            "version": "1.5.7_1"
+            "version": "1.5.7_2"
           }
         ],
         "go": [
@@ -4162,7 +4166,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 84,
+        "freebsd": 85,
         "go": 108,
         "java": 0,
         "node": 143,
@@ -4170,7 +4174,7 @@
         "python": 1,
         "ruby": 0,
         "rust": 0,
-        "total": 336
+        "total": 337
       }
     }
   }
