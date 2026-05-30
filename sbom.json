@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-28T21:16:12Z",
+  "generated": "2026-05-30T16:02:51Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.162.1",
       "arch": "amd64",
-      "generated": "2026-05-28T21:13:34Z",
+      "generated": "2026-05-30T16:01:36Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -996,7 +996,7 @@
           },
           {
             "name": "immutable",
-            "version": "5.1.5"
+            "version": "5.1.6"
           },
           {
             "name": "imurmurhash",
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_2_1",
       "arch": "amd64",
-      "generated": "2026-05-28T21:14:59Z",
+      "generated": "2026-05-30T16:01:07Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2797,9 +2797,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.161.1_1_1",
+      "app_version": "0.162.0_1",
       "arch": "amd64",
-      "generated": "2026-05-28T21:13:33Z",
+      "generated": "2026-05-30T16:01:12Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2965,7 +2965,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.161.1_1,1"
+            "version": "0.162.0,1"
           },
           {
             "name": "googletest",
@@ -3125,7 +3125,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.50.4_2,1"
+            "version": "3.53.1,1"
           },
           {
             "name": "tiff",
@@ -3155,11 +3155,11 @@
           },
           {
             "name": "github.com/JohannesKaufmann/html-to-markdown/v2",
-            "version": "v2.5.0"
+            "version": "v2.5.1"
           },
           {
             "name": "github.com/alecthomas/chroma/v2",
-            "version": "v2.23.1"
+            "version": "v2.24.1"
           },
           {
             "name": "github.com/aymerick/douceur",
@@ -3199,7 +3199,7 @@
           },
           {
             "name": "github.com/bep/helpers",
-            "version": "v0.8.0"
+            "version": "v0.12.0"
           },
           {
             "name": "github.com/bep/imagemeta",
@@ -3259,7 +3259,7 @@
           },
           {
             "name": "github.com/dlclark/regexp2",
-            "version": "v1.11.5"
+            "version": "v1.12.0"
           },
           {
             "name": "github.com/evanw/esbuild",
@@ -3279,7 +3279,7 @@
           },
           {
             "name": "github.com/getkin/kin-openapi",
-            "version": "v0.137.0"
+            "version": "v0.138.0"
           },
           {
             "name": "github.com/go-openapi/jsonpointer",
@@ -3447,7 +3447,7 @@
           },
           {
             "name": "github.com/pelletier/go-toml/v2",
-            "version": "v2.3.0"
+            "version": "v2.3.1"
           },
           {
             "name": "github.com/perimeterx/marshmallow",
@@ -3503,7 +3503,7 @@
           },
           {
             "name": "github.com/tetratelabs/wazero",
-            "version": "v1.11.0"
+            "version": "v1.11.1-0.20260521072212-475a1f8f0dc3"
           },
           {
             "name": "github.com/woodsbury/decimal128",
@@ -3527,19 +3527,19 @@
           },
           {
             "name": "golang.org/x/crypto",
-            "version": "v0.50.0"
+            "version": "v0.51.0"
           },
           {
             "name": "golang.org/x/image",
-            "version": "v0.39.0"
+            "version": "v0.41.0"
           },
           {
             "name": "golang.org/x/mod",
-            "version": "v0.35.0"
+            "version": "v0.36.0"
           },
           {
             "name": "golang.org/x/net",
-            "version": "v0.53.0"
+            "version": "v0.55.0"
           },
           {
             "name": "golang.org/x/sync",
@@ -3547,15 +3547,15 @@
           },
           {
             "name": "golang.org/x/sys",
-            "version": "v0.43.0"
+            "version": "v0.45.0"
           },
           {
             "name": "golang.org/x/text",
-            "version": "v0.36.0"
+            "version": "v0.37.0"
           },
           {
             "name": "golang.org/x/tools",
-            "version": "v0.44.0"
+            "version": "v0.45.0"
           },
           {
             "name": "google.golang.org/protobuf",
