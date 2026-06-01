@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-30T16:02:51Z",
+  "generated": "2026-06-01T07:43:15Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.162.1",
       "arch": "amd64",
-      "generated": "2026-05-30T16:01:36Z",
+      "generated": "2026-06-01T07:41:00Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_2_1",
       "arch": "amd64",
-      "generated": "2026-05-30T16:01:07Z",
+      "generated": "2026-06-01T07:42:05Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2797,9 +2797,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.162.0_1",
+      "app_version": "0.162.1_1",
       "arch": "amd64",
-      "generated": "2026-05-30T16:01:12Z",
+      "generated": "2026-06-01T07:41:03Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2965,7 +2965,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.162.0,1"
+            "version": "0.162.1,1"
           },
           {
             "name": "googletest",
@@ -3191,7 +3191,7 @@
           },
           {
             "name": "github.com/bep/golocales",
-            "version": "v0.1.0"
+            "version": "v0.2.0"
           },
           {
             "name": "github.com/bep/goportabletext",
