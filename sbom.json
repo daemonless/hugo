@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-08T19:30:51Z",
+  "generated": "2026-06-11T21:39:49Z",
   "image": "hugo",
   "tags": {
     "latest": {
-      "app_version": "v0.163.0",
+      "app_version": "v0.163.1",
       "arch": "amd64",
-      "generated": "2026-06-08T19:28:46Z",
+      "generated": "2026-06-11T21:37:57Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -381,7 +381,7 @@
           },
           {
             "name": "github.com/bep/overlayfs",
-            "version": "v0.10.0"
+            "version": "v0.11.0"
           },
           {
             "name": "github.com/bep/simplecobra",
@@ -485,7 +485,7 @@
           },
           {
             "name": "github.com/gohugoio/hugo",
-            "version": "v0.162.2-0.20260608141303-4a9485336a3f+dirty"
+            "version": "v0.163.1-0.20260611153440-2a4fd58818ff+dirty"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
@@ -693,7 +693,7 @@
           },
           {
             "name": "golang.org/x/image",
-            "version": "v0.41.0"
+            "version": "v0.42.0"
           },
           {
             "name": "golang.org/x/mod",
@@ -705,7 +705,7 @@
           },
           {
             "name": "golang.org/x/sync",
-            "version": "v0.20.0"
+            "version": "v0.21.0"
           },
           {
             "name": "golang.org/x/sys",
@@ -713,7 +713,7 @@
           },
           {
             "name": "golang.org/x/text",
-            "version": "v0.37.0"
+            "version": "v0.38.0"
           },
           {
             "name": "golang.org/x/tools",
@@ -1272,7 +1272,7 @@
           },
           {
             "name": "sass",
-            "version": "1.100.0"
+            "version": "1.101.0"
           },
           {
             "name": "semver",
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_3_1",
       "arch": "amd64",
-      "generated": "2026-06-08T19:29:26Z",
+      "generated": "2026-06-11T21:38:33Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2799,7 +2799,7 @@
     "pkg-latest": {
       "app_version": "0.162.1_1_1",
       "arch": "amd64",
-      "generated": "2026-06-08T19:29:41Z",
+      "generated": "2026-06-11T21:37:55Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
