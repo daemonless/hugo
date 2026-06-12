@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-11T21:39:49Z",
+  "generated": "2026-06-12T16:08:34Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.163.1",
       "arch": "amd64",
-      "generated": "2026-06-11T21:37:57Z",
+      "generated": "2026-06-12T16:05:30Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1406,7 +1406,7 @@
     "pkg": {
       "app_version": "0.159.2_3_1",
       "arch": "amd64",
-      "generated": "2026-06-11T21:38:33Z",
+      "generated": "2026-06-12T16:06:43Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2797,9 +2797,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.162.1_1_1",
+      "app_version": "0.163.0_1",
       "arch": "amd64",
-      "generated": "2026-06-11T21:37:55Z",
+      "generated": "2026-06-12T16:07:15Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2965,7 +2965,7 @@
           },
           {
             "name": "gohugo",
-            "version": "0.162.1_1,1"
+            "version": "0.163.0,1"
           },
           {
             "name": "googletest",
@@ -3235,7 +3235,7 @@
           },
           {
             "name": "github.com/bits-and-blooms/bitset",
-            "version": "v1.24.4"
+            "version": "v1.24.5"
           },
           {
             "name": "github.com/cespare/xxhash/v2",
@@ -3279,7 +3279,7 @@
           },
           {
             "name": "github.com/getkin/kin-openapi",
-            "version": "v0.138.0"
+            "version": "v0.139.0"
           },
           {
             "name": "github.com/go-openapi/jsonpointer",
@@ -3419,11 +3419,11 @@
           },
           {
             "name": "github.com/oasdiff/yaml",
-            "version": "v0.0.9"
+            "version": "v0.1.0"
           },
           {
             "name": "github.com/oasdiff/yaml3",
-            "version": "v0.0.12"
+            "version": "v0.0.13"
           },
           {
             "name": "github.com/olekukonko/cat",
@@ -3463,7 +3463,7 @@
           },
           {
             "name": "github.com/rogpeppe/go-internal",
-            "version": "v1.14.1"
+            "version": "v1.15.0"
           },
           {
             "name": "github.com/russross/blackfriday/v2",
@@ -3503,7 +3503,7 @@
           },
           {
             "name": "github.com/tetratelabs/wazero",
-            "version": "v1.11.1-0.20260521072212-475a1f8f0dc3"
+            "version": "v1.12.0"
           },
           {
             "name": "github.com/woodsbury/decimal128",
@@ -3575,7 +3575,7 @@
           },
           {
             "name": "stdlib",
-            "version": "v1.25.11"
+            "version": "v1.26.0"
           }
         ],
         "java": [],
