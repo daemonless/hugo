@@ -10,7 +10,6 @@ Source: dbuild templates
 
 Fast and flexible static site generator — builds your entire site at creation time rather than on each request.
 
-
 | | |
 |---|---|
 | **Port** | 1313 |
@@ -37,17 +36,17 @@ Before deploying, ensure your host environment is ready. See the [Quick Start Gu
 ```yaml
 services:
   hugo:
-    image: ghcr.io/daemonless/hugo:latest
+    image: "ghcr.io/daemonless/hugo:latest"
     container_name: hugo
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=UTC
-      - HUGO_BASEURL=http://localhost:1313
+      - PUID=1000  # User ID for the application process
+      - PGID=1000  # Group ID for the application process
+      - TZ=UTC  # Timezone for the container
+      - HUGO_BASEURL=http://localhost:1313  # Hostname (and path) to the root
     volumes:
       - "/path/to/containers/hugo/app:/app"
     ports:
-      - 1313:1313
+      - "1313:1313"
     restart: unless-stopped
 ```
 
@@ -116,7 +115,7 @@ podman run -d --name hugo \
 - name: Deploy hugo
   containers.podman.podman_container:
     name: hugo
-    image: ghcr.io/daemonless/hugo:latest
+    image: "ghcr.io/daemonless/hugo:latest"
     state: started
     restart_policy: always
     env:
@@ -129,8 +128,6 @@ podman run -d --name hugo \
     volumes:
       - "/path/to/containers/hugo/app:/app"
 ```
-
-Access at: `http://localhost:1313`
 
 ## Parameters
 

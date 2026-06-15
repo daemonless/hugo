@@ -29,7 +29,7 @@ services:
     image: ghcr.io/daemonless/hugo:latest
     container_name: hugo
     restart: unless-stopped
-    
+
     environment:
       - PUID=1000
       - PGID=1000
