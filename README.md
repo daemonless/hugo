@@ -18,7 +18,6 @@ Fast and flexible static site generator — builds your entire site at creation 
 | **Website** | [https://gohugo.io/](https://gohugo.io/) |
 
 ## Version Tags
-
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
 | `latest` | **Upstream Binary**. Built from official release. | Most users. Matches Linux Docker behavior. |
@@ -26,7 +25,6 @@ Fast and flexible static site generator — builds your entire site at creation 
 | `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 
 ## Prerequisites
-
 Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
 
 ## Deployment
@@ -51,10 +49,11 @@ services:
 ```
 
 ### AppJail Director
-
 **.env**:
 
 ```
+# .env
+
 DIRECTOR_PROJECT=hugo
 PUID=1000
 PGID=1000
@@ -65,6 +64,8 @@ HUGO_BASEURL=http://localhost:1313
 **appjail-director.yml**:
 
 ```yaml
+# appjail-director.yml
+
 options:
   - virtualnet: ':<random> default'
   - nat:
@@ -73,6 +74,7 @@ services:
     name: hugo
     options:
       - container: 'boot args:--pull'
+      - expose: '1313:1313 proto:tcp' \
     oci:
       user: root
       environment:
@@ -90,11 +92,14 @@ volumes:
 **Makejail**:
 
 ```
+# Makejail 
+
 ARG tag=latest
 
 OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/hugo:${tag}
 ```
+**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Podman CLI
 
@@ -108,6 +113,24 @@ podman run -d --name hugo \
   -v /path/to/containers/hugo/app:/app \
   ghcr.io/daemonless/hugo:latest
 ```
+
+### AppJail
+
+```bash
+appjail oci run -Pd \
+  -o overwrite=force \
+  -o container="args:--pull" \
+  -o virtualnet=":<random> default" \
+  -o nat \
+  -o expose="1313:1313 proto:tcp" \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=UTC \
+  -e HUGO_BASEURL=http://localhost:1313 \
+  -o fstab="/path/to/containers/hugo/app /app <pseudofs>" \
+  ghcr.io/daemonless/hugo:latest hugo
+```
+**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Ansible
 
@@ -154,7 +177,7 @@ podman run -d --name hugo \
 
 **Architectures:** amd64
 **User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
-**Base:** FreeBSD 15.0
+**Base:** FreeBSD 15.1
 
 ---
 
