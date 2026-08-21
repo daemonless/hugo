@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-18T07:49:57Z",
+  "generated": "2026-08-21T20:58:14Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.165.0",
       "arch": "amd64",
-      "generated": "2026-08-18T07:45:10Z",
+      "generated": "2026-08-21T20:35:24Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -504,7 +504,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_4"
+            "version": "3.12.14"
           },
           {
             "licenses": [
@@ -1723,7 +1723,7 @@
           {
             "name": "sass",
             "purl": "",
-            "version": "1.102.0"
+            "version": "1.103.1"
           },
           {
             "name": "semver",
@@ -1879,7 +1879,7 @@
     "pkg": {
       "app_version": "0.163.3_2_1",
       "arch": "amd64",
-      "generated": "2026-08-18T07:45:12Z",
+      "generated": "2026-08-21T20:35:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2126,7 +2126,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.125"
+            "version": "3.126.1"
           },
           {
             "licenses": [
@@ -2436,7 +2436,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_4"
+            "version": "3.12.14"
           },
           {
             "licenses": [
@@ -3798,9 +3798,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.165.0_1_1",
+      "app_version": "0.165.0_2_1",
       "arch": "amd64",
-      "generated": "2026-08-18T07:49:11Z",
+      "generated": "2026-08-21T20:57:39Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -4047,7 +4047,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.125"
+            "version": "3.126.1"
           },
           {
             "licenses": [
@@ -4111,7 +4111,7 @@
               "APACHE20"
             ],
             "name": "gohugo",
-            "version": "0.165.0_1,1"
+            "version": "0.165.0_2,1"
           },
           {
             "licenses": [
@@ -4199,7 +4199,7 @@
               "MIT"
             ],
             "name": "libffi",
-            "version": "3.7.1"
+            "version": "3.8.0"
           },
           {
             "licenses": [
@@ -4242,7 +4242,7 @@
               "MIT"
             ],
             "name": "libpsl",
-            "version": "0.22.0"
+            "version": "0.23.0"
           },
           {
             "licenses": [
@@ -4942,7 +4942,7 @@
           {
             "name": "stdlib",
             "purl": "",
-            "version": "v1.26.6"
+            "version": "v1.26.7"
           }
         ],
         "java": [],
