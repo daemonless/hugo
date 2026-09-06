@@ -45,8 +45,11 @@ services:
       - "/path/to/containers/hugo/app:/app"
     ports:
       - "1313:1313"
-    restart: unless-stopped
+    # always (not unless-stopped) so FreeBSD's podman rc.d auto-starts it at boot
+    restart: always
 ```
+
+Save as `compose.yaml`, then run `podman-compose up -d`.
 
 ### AppJail Director
 **.env**:
@@ -99,6 +102,9 @@ ARG tag=latest
 OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/hugo:${tag}
 ```
+
+Save the files above, then run `appjail-director up`.
+
 **Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Podman CLI
@@ -113,6 +119,8 @@ podman run -d --name hugo \
   -v /path/to/containers/hugo/app:/app \
   ghcr.io/daemonless/hugo:latest
 ```
+
+Save as `run.sh`, then run `sh run.sh`.
 
 ### AppJail
 
@@ -130,7 +138,40 @@ appjail oci run -Pd \
   -o fstab="/path/to/containers/hugo/app /app <pseudofs>" \
   ghcr.io/daemonless/hugo:latest hugo
 ```
+
+Save as `run.sh`, then run `sh run.sh`.
+
 **Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
+
+### Bastille
+
+> [!WARNING]
+> Bastille's OCI support is **experimental**. It requires `buildah`, shares the host network stack (`inherit`), and persists image-declared volumes under `--data-path`.
+
+```yaml
+services:
+  hugo:
+    image: "ghcr.io/daemonless/hugo:latest"
+    container_name: hugo
+    network_mode: host  # jail shares host networking
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - HUGO_BASEURL=http://localhost:1313
+```
+
+Save as `podman-compose.yml`, then run `bastille up`. Or via CLI:
+
+```bash
+bastille create -O \
+  --env PUID=1000 \
+  --env PGID=1000 \
+  --env TZ=UTC \
+  --env HUGO_BASEURL=http://localhost:1313 \
+  --data-path /path/to/containers/hugo \
+  hugo ghcr.io/daemonless/hugo:latest inherit
+```
 
 ### Ansible
 
@@ -151,6 +192,8 @@ appjail oci run -Pd \
     volumes:
       - "/path/to/containers/hugo/app:/app"
 ```
+
+Save as `hugo-deploy.yaml`, then run `ansible-playbook hugo-deploy.yaml`.
 
 ## Parameters
 
