@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-19T10:30:38Z",
+  "generated": "2026-09-29T08:23:20Z",
   "image": "hugo",
   "tags": {
     "latest": {
-      "app_version": "v0.166.0",
+      "app_version": "v0.167.0",
       "arch": "amd64",
-      "generated": "2026-09-19T10:29:48Z",
+      "generated": "2026-09-29T08:21:41Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -266,7 +266,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.129"
+            "version": "3.130"
           },
           {
             "licenses": [
@@ -654,7 +654,7 @@
           {
             "name": "github.com/bep/imagemeta",
             "purl": "",
-            "version": "v1.0.0"
+            "version": "v1.0.1"
           },
           {
             "name": "github.com/bep/lazycache",
@@ -804,7 +804,7 @@
           {
             "name": "github.com/gohugoio/hugo",
             "purl": "",
-            "version": "v0.165.1-0.20260909144502-78400b4de8ad+dirty"
+            "version": "v0.166.1-0.20260928145038-3fff6fb5c267+dirty"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
@@ -934,7 +934,7 @@
           {
             "name": "github.com/olekukonko/tablewriter",
             "purl": "",
-            "version": "v1.1.4"
+            "version": "v1.1.5"
           },
           {
             "name": "github.com/pbnjay/memory",
@@ -989,7 +989,7 @@
           {
             "name": "github.com/spf13/fsync",
             "purl": "",
-            "version": "v0.10.1"
+            "version": "v0.10.2"
           },
           {
             "name": "github.com/spf13/pflag",
@@ -1034,12 +1034,12 @@
           {
             "name": "golang.org/x/crypto",
             "purl": "",
-            "version": "v0.55.0"
+            "version": "v0.57.0"
           },
           {
             "name": "golang.org/x/image",
             "purl": "",
-            "version": "v0.45.0"
+            "version": "v0.46.0"
           },
           {
             "name": "golang.org/x/mod",
@@ -1049,7 +1049,7 @@
           {
             "name": "golang.org/x/net",
             "purl": "",
-            "version": "v0.58.0"
+            "version": "v0.59.0"
           },
           {
             "name": "golang.org/x/sync",
@@ -1059,17 +1059,17 @@
           {
             "name": "golang.org/x/sys",
             "purl": "",
-            "version": "v0.47.0"
+            "version": "v0.48.0"
           },
           {
             "name": "golang.org/x/text",
             "purl": "",
-            "version": "v0.41.0"
+            "version": "v0.42.0"
           },
           {
             "name": "golang.org/x/tools",
             "purl": "",
-            "version": "v0.49.0"
+            "version": "v0.50.0"
           },
           {
             "name": "google.golang.org/protobuf",
@@ -1089,7 +1089,7 @@
           {
             "name": "stdlib",
             "purl": "",
-            "version": "v1.27.0"
+            "version": "v1.27.1"
           }
         ],
         "java": [],
@@ -1737,7 +1737,7 @@
           {
             "name": "sass",
             "purl": "",
-            "version": "1.104.1"
+            "version": "1.105.0"
           },
           {
             "name": "semver",
@@ -1893,7 +1893,7 @@
     "pkg": {
       "app_version": "0.163.3_3_1",
       "arch": "amd64",
-      "generated": "2026-09-19T10:28:45Z",
+      "generated": "2026-09-29T08:22:36Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -3828,7 +3828,7 @@
     "pkg-latest": {
       "app_version": "0.165.0_3_1",
       "arch": "amd64",
-      "generated": "2026-09-19T10:29:37Z",
+      "generated": "2026-09-29T08:21:47Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -4329,7 +4329,7 @@
               "APACHE20"
             ],
             "name": "merve",
-            "version": "1.2.2_2"
+            "version": "1.2.2_3"
           },
           {
             "licenses": [
@@ -4399,14 +4399,14 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14"
+            "version": "3.12.14_1"
           },
           {
             "licenses": [
               "GPLv3"
             ],
             "name": "readline",
-            "version": "8.3.3"
+            "version": "8.3.6"
           },
           {
             "licenses": [
@@ -4429,7 +4429,7 @@
               "APACHE20"
             ],
             "name": "simdutf",
-            "version": "9.1.2"
+            "version": "9.2.0"
           },
           {
             "licenses": [
