@@ -43,7 +43,7 @@ services:
       - TZ=UTC  # Timezone for the container
       - HUGO_BASEURL=http://localhost:1313  # Hostname (and path) to the root
     volumes:
-      - "/path/to/containers/hugo/app:/app"
+      - "/containers/hugo/app:/app"
     ports:
       - "1313:1313"
     # always (not unless-stopped) so FreeBSD's podman rc.d auto-starts it at boot
@@ -90,7 +90,7 @@ services:
       - hugo_app: /app
 volumes:
   hugo_app:
-    device: '/path/to/containers/hugo/app'
+    device: '/containers/hugo/app'
 ```
 
 **Makejail**:
@@ -106,47 +106,6 @@ OPTION from=ghcr.io/daemonless/hugo:${tag}
 ```
 
 Save the files above, then run `appjail-director up`.
-
-
-> [!WARNING]
-> Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the jail's IPv4 address or hostname assigned by the virtual network.
->
-> To avoid exposing ports, just remove the `expose` option in your `appjail-director.yml` or from your command-line arguments.
-
-### Podman CLI
-
-```bash
-podman run -d --name hugo \
-  -p 1313:1313 \
-  -e PUID=1000 \
-  -e PGID=1000 \
-  -e TZ=UTC \
-  -e HUGO_BASEURL=http://localhost:1313 \
-  -v /path/to/containers/hugo/app:/app \
-  ghcr.io/daemonless/hugo:latest
-```
-
-Save as `run.sh`, then run `sh run.sh`.
-
-### AppJail
-
-
-```bash
-appjail oci run -Pd \
-  -o overwrite=force \
-  -o container="args:--pull" \
-  -o virtualnet=":<random> default" \
-  -o nat \
-  -o expose="1313:1313 proto:tcp" \
-  -e PUID=1000 \
-  -e PGID=1000 \
-  -e TZ=UTC \
-  -e HUGO_BASEURL=http://localhost:1313 \
-  -o fstab="/path/to/containers/hugo/app /app <pseudofs>" \
-  ghcr.io/daemonless/hugo:latest hugo
-```
-
-Save the files above, then run `sh run.sh`.
 
 
 > [!WARNING]
@@ -172,42 +131,10 @@ services:
       - TZ=UTC
       - HUGO_BASEURL=http://localhost:1313
     volumes:
-      - "/path/to/containers/hugo/app:/app"
+      - "/containers/hugo/app:/app"
 ```
 
-Save as `bastille-compose.yml`, then run `bastille up`. Or via CLI:
-
-```bash
-bastille create -O \
-  --env PUID=1000 \
-  --env PGID=1000 \
-  --env TZ=UTC \
-  --env HUGO_BASEURL=http://localhost:1313 \
-  --volume /path/to/containers/hugo/app /app \
-  hugo ghcr.io/daemonless/hugo:latest inherit
-```
-
-### Ansible
-
-```yaml
-- name: Deploy hugo
-  containers.podman.podman_container:
-    name: hugo
-    image: "ghcr.io/daemonless/hugo:latest"
-    state: started
-    restart_policy: always
-    env:
-      PUID: "1000"
-      PGID: "1000"
-      TZ: "UTC"
-      HUGO_BASEURL: "http://localhost:1313"
-    ports:
-      - "1313:1313"
-    volumes:
-      - "/path/to/containers/hugo/app:/app"
-```
-
-Save as `hugo-deploy.yaml`, then run `ansible-playbook hugo-deploy.yaml`.
+Save as `bastille-compose.yml`, then run `bastille up`.
 
 ## Parameters
 

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-29T08:23:20Z",
+  "generated": "2026-10-03T17:02:32Z",
   "image": "hugo",
   "tags": {
     "latest": {
       "app_version": "v0.167.0",
       "arch": "amd64",
-      "generated": "2026-09-29T08:21:41Z",
+      "generated": "2026-10-03T17:01:51Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1737,7 +1737,7 @@
           {
             "name": "sass",
             "purl": "",
-            "version": "1.105.0"
+            "version": "1.105.1"
           },
           {
             "name": "semver",
@@ -1772,7 +1772,7 @@
           {
             "name": "source-map-js",
             "purl": "",
-            "version": "1.2.1"
+            "version": "1.2.2"
           },
           {
             "name": "spdx-exceptions",
@@ -1893,7 +1893,7 @@
     "pkg": {
       "app_version": "0.163.3_3_1",
       "arch": "amd64",
-      "generated": "2026-09-29T08:22:36Z",
+      "generated": "2026-10-03T17:00:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -3826,9 +3826,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "0.165.0_3_1",
+      "app_version": "0.167.0_1",
       "arch": "amd64",
-      "generated": "2026-09-29T08:21:47Z",
+      "generated": "2026-10-03T17:00:07Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -4139,7 +4139,7 @@
               "GPLv2"
             ],
             "name": "git-tiny",
-            "version": "2.55.0"
+            "version": "2.56.0"
           },
           {
             "licenses": [
@@ -4153,7 +4153,7 @@
               "APACHE20"
             ],
             "name": "gohugo",
-            "version": "0.165.0_3,1"
+            "version": "0.167.0,1"
           },
           {
             "licenses": [
@@ -4357,7 +4357,7 @@
               "MIT"
             ],
             "name": "node24",
-            "version": "24.21.0"
+            "version": "24.21.0_1"
           },
           {
             "licenses": [
@@ -4421,7 +4421,7 @@
               "APACHE20"
             ],
             "name": "simdjson",
-            "version": "4.6.11_1"
+            "version": "5.0.1"
           },
           {
             "licenses": [
@@ -4429,7 +4429,7 @@
               "APACHE20"
             ],
             "name": "simdutf",
-            "version": "9.2.0"
+            "version": "9.2.1"
           },
           {
             "licenses": [
@@ -4549,12 +4549,12 @@
           {
             "name": "github.com/bep/imagemeta",
             "purl": "",
-            "version": "v1.0.0"
+            "version": "v1.0.1"
           },
           {
             "name": "github.com/bep/lazycache",
             "purl": "",
-            "version": "v0.8.1"
+            "version": "v0.9.0"
           },
           {
             "name": "github.com/bep/logg",
@@ -4584,12 +4584,12 @@
           {
             "name": "github.com/bep/tmc",
             "purl": "",
-            "version": "v0.6.0"
+            "version": "v0.7.0"
           },
           {
             "name": "github.com/bits-and-blooms/bitset",
             "purl": "",
-            "version": "v1.24.5"
+            "version": "v1.25.0"
           },
           {
             "name": "github.com/cespare/xxhash/v2",
@@ -4644,7 +4644,7 @@
           {
             "name": "github.com/getkin/kin-openapi",
             "purl": "",
-            "version": "v0.146.0"
+            "version": "v0.149.0"
           },
           {
             "name": "github.com/go-openapi/jsonpointer",
@@ -4664,7 +4664,7 @@
           {
             "name": "github.com/gobwas/glob",
             "purl": "",
-            "version": "v0.2.3"
+            "version": "v1.0.0"
           },
           {
             "name": "github.com/goccy/go-yaml",
@@ -4694,7 +4694,7 @@
           {
             "name": "github.com/gohugoio/httpcache",
             "purl": "",
-            "version": "v0.8.0"
+            "version": "v0.9.0"
           },
           {
             "name": "github.com/gohugoio/hugo",
@@ -4829,7 +4829,7 @@
           {
             "name": "github.com/olekukonko/tablewriter",
             "purl": "",
-            "version": "v1.1.4"
+            "version": "v1.1.5"
           },
           {
             "name": "github.com/pbnjay/memory",
@@ -4864,7 +4864,7 @@
           {
             "name": "github.com/santhosh-tekuri/jsonschema/v6",
             "purl": "",
-            "version": "v6.0.2"
+            "version": "v6.0.3"
           },
           {
             "name": "github.com/spf13/afero",
@@ -4884,7 +4884,7 @@
           {
             "name": "github.com/spf13/fsync",
             "purl": "",
-            "version": "v0.10.1"
+            "version": "v0.10.2"
           },
           {
             "name": "github.com/spf13/pflag",
@@ -4894,12 +4894,12 @@
           {
             "name": "github.com/tdewolff/minify/v2",
             "purl": "",
-            "version": "v2.24.16"
+            "version": "v2.24.17"
           },
           {
             "name": "github.com/tdewolff/parse/v2",
             "purl": "",
-            "version": "v2.8.15"
+            "version": "v2.8.16"
           },
           {
             "name": "github.com/tetratelabs/wazero",
@@ -4909,7 +4909,7 @@
           {
             "name": "github.com/yuin/goldmark",
             "purl": "",
-            "version": "v1.8.5"
+            "version": "v1.8.6"
           },
           {
             "name": "github.com/yuin/goldmark-emoji",
@@ -4929,42 +4929,42 @@
           {
             "name": "golang.org/x/crypto",
             "purl": "",
-            "version": "v0.54.0"
+            "version": "v0.57.0"
           },
           {
             "name": "golang.org/x/image",
             "purl": "",
-            "version": "v0.44.0"
+            "version": "v0.46.0"
           },
           {
             "name": "golang.org/x/mod",
             "purl": "",
-            "version": "v0.38.0"
+            "version": "v0.41.0"
           },
           {
             "name": "golang.org/x/net",
             "purl": "",
-            "version": "v0.57.0"
+            "version": "v0.59.0"
           },
           {
             "name": "golang.org/x/sync",
             "purl": "",
-            "version": "v0.22.0"
+            "version": "v0.23.0"
           },
           {
             "name": "golang.org/x/sys",
             "purl": "",
-            "version": "v0.47.0"
+            "version": "v0.48.0"
           },
           {
             "name": "golang.org/x/text",
             "purl": "",
-            "version": "v0.40.0"
+            "version": "v0.42.0"
           },
           {
             "name": "golang.org/x/tools",
             "purl": "",
-            "version": "v0.48.0"
+            "version": "v0.50.0"
           },
           {
             "name": "google.golang.org/protobuf",
@@ -4979,12 +4979,12 @@
           {
             "name": "software.sslmate.com/src/go-pkcs12",
             "purl": "",
-            "version": "v0.7.0"
+            "version": "v0.7.2"
           },
           {
             "name": "stdlib",
             "purl": "",
-            "version": "v1.26.8"
+            "version": "v1.27.0"
           }
         ],
         "java": [],
