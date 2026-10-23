@@ -1,0 +1,13 @@
+#!/bin/sh
+# First start: a default site in /app, owned by bsd.
+set -e
+cd /app
+if [ ! -f "hugo.toml" ] && [ ! -f "config.toml" ] && [ ! -f "hugo.yaml" ]; then
+    echo "[hugo] No site configuration found. Initializing default site..."
+    cp /defaults/hugo.yaml ./hugo.yaml
+    mkdir -p layouts
+    cp /defaults/layouts/index.html ./layouts/index.html
+    if [ "$(id -u)" = 0 ]; then
+        chown -R bsd:bsd .
+    fi
+fi

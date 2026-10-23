@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+# Start Hugo; /init has already dropped to bsd.
+
+cd /app
+
+# Set baseURL from environment if provided
+HUGO_ARGS=""
+if [ -n "${HUGO_BASEURL}" ]; then
+    HUGO_ARGS="${HUGO_ARGS} --baseURL ${HUGO_BASEURL}"
+fi
+
+echo "[hugo] Starting Hugo Server..."
+
+# --appendPort=false ensures Hugo respects the port in baseURL (e.g. 8833) 
+
+# instead of appending the internal bind port (1313)
+
+exec hugo server --bind 0.0.0.0 --poll 700ms --disableFastRender --appendPort=false ${HUGO_ARGS}
