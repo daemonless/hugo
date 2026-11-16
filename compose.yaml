@@ -18,7 +18,9 @@ x-daemonless:
       PUID: "User ID for the application process"
       PGID: "Group ID for the application process"
       TZ: "Timezone for the container"
-      HUGO_BASEURL: "Hostname (and path) to the root"
+      HUGO_BASEURL:
+        desc: "Base URL of the site (used for asset and LiveReload links)"
+        public_url: true
     volumes:
       /app: "Website source code (mount your repo here)"
     ports:

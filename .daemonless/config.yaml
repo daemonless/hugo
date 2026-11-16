@@ -1,6 +1,8 @@
 icon: ":simple-hugo:"
 cit:
+  mode: health
   port: 1313
+  health: /
 build:
   pkg_name: gohugo
   variants:
