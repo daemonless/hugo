@@ -41,7 +41,7 @@ services:
       - PUID=1000  # User ID for the application process
       - PGID=1000  # Group ID for the application process
       - TZ=UTC  # Timezone for the container
-      - HUGO_BASEURL=http://localhost:1313  # Hostname (and path) to the root
+      - HUGO_BASEURL=http://localhost:1313  # Base URL of the site (used for asset and LiveReload links)
     volumes:
       - "/containers/hugo/app:/app"
     ports:
@@ -135,6 +135,7 @@ services:
 ```
 
 Save as `bastille-compose.yml`, then run `bastille up`.
+Open `http://<server>:1313` from another machine (the server's own browser can't use a published port).
 
 ## Parameters
 
@@ -145,7 +146,7 @@ Save as `bastille-compose.yml`, then run `bastille up`.
 | `PUID` | `1000` | User ID for the application process |
 | `PGID` | `1000` | Group ID for the application process |
 | `TZ` | `UTC` | Timezone for the container |
-| `HUGO_BASEURL` | `http://localhost:1313` | Hostname (and path) to the root |
+| `HUGO_BASEURL` | `http://localhost:1313` | Base URL of the site (used for asset and LiveReload links) |
 
 ### Volumes
 

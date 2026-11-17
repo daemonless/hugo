@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-15T09:13:12Z",
+  "generated": "2026-11-17T23:38:34Z",
   "image": "hugo",
   "tags": {
     "latest": {
-      "app_version": "v0.170.0",
+      "app_version": "v0.170.1",
       "arch": "amd64",
-      "generated": "2026-11-15T09:12:14Z",
+      "generated": "2026-11-17T23:37:50Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -612,7 +612,7 @@
           {
             "name": "github.com/bep/imagemeta",
             "purl": "",
-            "version": "v1.1.1"
+            "version": "v1.1.2"
           },
           {
             "name": "github.com/bep/lazycache",
@@ -762,7 +762,7 @@
           {
             "name": "github.com/gohugoio/hugo",
             "purl": "",
-            "version": "v0.169.1-0.20261113141719-f7aa05f0f521+dirty"
+            "version": "v0.170.1-0.20261117163813-c8b03de9564c+dirty"
           },
           {
             "name": "github.com/gohugoio/hugo-goldmark-extensions/extras",
@@ -773,6 +773,11 @@
             "name": "github.com/gohugoio/hugo-goldmark-extensions/passthrough",
             "purl": "",
             "version": "v0.6.0"
+          },
+          {
+            "name": "github.com/gohugoio/qr",
+            "purl": "",
+            "version": "v0.1.0"
           },
           {
             "name": "github.com/google/go-cmp",
@@ -1028,11 +1033,6 @@
             "name": "google.golang.org/protobuf",
             "purl": "",
             "version": "v1.36.11"
-          },
-          {
-            "name": "rsc.io/qr",
-            "purl": "",
-            "version": "v0.2.0"
           },
           {
             "name": "software.sslmate.com/src/go-pkcs12",
